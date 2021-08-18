@@ -101,6 +101,10 @@ class ItemUsavel {
 
 		return "Você recebeu " . $equipamento["nome"];
 	}
+	public function ouro(){
+		$this->userDetails->add_ouro(300);
+		return "voce recebeu 300 ouros!";
+	}
 
 	public function abre_bau_equipamentos_azuis() {
 		if (!$this->userDetails->can_add_item()) {

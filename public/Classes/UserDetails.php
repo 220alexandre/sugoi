@@ -107,6 +107,11 @@ class UserDetails {
 		}
 		return $the_ip;
 	}
+	public function add_ouro($quant) {
+
+		$this->connection->run("UPDATE tb_conta SET gold = gold + ? WHERE conta_id = ?",
+			"ii", array($quant, $this->conta["conta_id"]));
+	}
 
 	protected function _update_last_logon() {
 		global $_SERVER;

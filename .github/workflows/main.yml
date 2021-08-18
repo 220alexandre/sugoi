@@ -18,10 +18,7 @@ jobs:
           key: ${{ secrets.KEY }}
           port: ${{ secrets.PORT }}
           script: |
-            cd /var/www/sugoigame
+            cd /var/www/sugoi
 
             git status
             git pull origin prod
-
-            pm2 stop sugoi-map
-            pm2 start /var/www/sugoigame/servers/map/server.php --name="sugoi-map"
