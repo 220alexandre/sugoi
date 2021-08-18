@@ -102,7 +102,7 @@ class ItemUsavel {
 		return "Você recebeu " . $equipamento["nome"];
 	}
 	public function ouro(){
-		$this->userDetails->add_ouro(300);
+		$this->userDetails->add_ouro(800);
 		return "voce recebeu 300 ouros!";
 	}
 
