@@ -131,10 +131,7 @@ if (!isset($banners[$banner_id])) {
 	<!-- Signup Form -->
 	<div id="signup-form">
 		<a class="button" id="jogar-button" data-toggle="modal" href="#modal-login">Comece a jogar!</a>
-		<a class="button bt-facebook" href="<?= $facebook_url ?>">
-			<i class="fa fa-facebook-square fa-fw"></i>
-			Entrar com Facebook
-		</a>
+
 	</div>
 </div>
 
