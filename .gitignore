@@ -1,0 +1,4 @@
+public/Editor
+servers/vendor
+sql/
+*.log
