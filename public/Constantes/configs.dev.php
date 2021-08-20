@@ -10,6 +10,6 @@ define('OCEANO_SERVER',         'localhost:9000');
 
 /* PAGSEGURO */
 define('PS_ENV',                'sandbox');    // production, sandbox
-define('PS_EMAIL',              'felipe.fmedeiros95@gmail.com');
-define('PS_TOKEN_SANDBOX',      'C43E8E781D194CAE9E6523999B98DCDE');
+define('PS_EMAIL',              'conquer.aliance@gmail.com');
+define('PS_TOKEN_SANDBOX',      '800C217DF422454A82AF62C05BA8C06A');
 define('PS_TOKEN_PRODUCTION',   NULL);
