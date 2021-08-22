@@ -49,6 +49,7 @@ function cor_bg(ilha, horario) {
         if (ilha == 45) imagem = "5f8bb1";
         if (ilha == 46) imagem = "c59cf1";
         if (ilha == 47) imagem = "fcfcfc";
+        if (ilha == 48) imagem = "00adf1";
         if (ilha == 101) imagem = "fcfcfc";
         if (ilha == 102) imagem = "fcfcfc";
     }
@@ -101,6 +102,7 @@ function cor_bg(ilha, horario) {
         if (ilha == 45) imagem = "5f8bb1";
         if (ilha == 46) imagem = "c59cf1";
         if (ilha == 47) imagem = "a8afeb";
+        if (ilha == 48) imagem = "00053d";
         if (ilha == 101) imagem = "a8afeb";
         if (ilha == 102) imagem = "a8afeb";
     }
@@ -157,8 +159,11 @@ function img_bg(ilha) {
     if (ilha == 45) imagem = "28";
     if (ilha == 46) imagem = "29";
     if (ilha == 47) imagem = "30";
+    if (ilha == 48) imagem = "5";
+    if (ilha == 49) imagem = "27";
     if (ilha == 101) imagem = "31";
     if (ilha == 102) imagem = "32";
+    
 
     return imagem;
 }

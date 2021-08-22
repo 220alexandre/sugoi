@@ -2641,3 +2641,29 @@
     - 22
     - 22
   battle_back: 38
+
+177:
+  requisito_lvl: 50
+  turnos: 70
+  duracao: 600
+  recompensa_xp: 7000
+  karma: 500
+  recompensa_berries: 500000
+  inimigos:
+    - 23
+    - 22
+    - 22
+  batte_back: 1
+
+178:
+  requisito_lvl: 50
+  turnos: 70
+  duracao: 600
+  recompensa_xp: 7000
+  karma: 500
+  recompensa_berries: 500000
+  inimigos:
+    - 23
+    - 22 
+    - 22
+  batte_back: 1

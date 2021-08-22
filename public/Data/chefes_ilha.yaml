@@ -431,6 +431,13 @@
     - tipo: alcunha
       cod_titulo: 81
 
+48:   # Laftel => lvl 50 => (100 + 65) => 164 * 9 => 1476 pontos
+  rdm: 124
+  recompensas:
+    - tipo: reagent
+      cod_item: 146
+      quant: 3
+
 101:  # Impel Down
   rdm: 80
   recompensas:

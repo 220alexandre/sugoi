@@ -352,6 +352,8 @@ function super_menu_can_be_active($menu) {
 			<?= super_menu_link("admin", "menu-admin", "Administração", "admin", "admin") ?>
 			<div id="menu-admin" class="collapse <?= super_menu_in_out("admin") ?>">
 				<ul class="vertical-nav nav navbar-nav">
+					<?= menu_link("admin-enviar-itens", "Enviar Itens", "fa fa-envelope-o", "") ?>
+					<?= menu_link("admin-tripulacoes", "Tripulaçoes do jogo", "fa fa-envelope-o", "") ?>
 					<?= menu_link("admin-news", "Gerenciar Noticias", "fa fa-newspaper-o", "") ?>
 					<?= menu_link("admin-mails", "Gerenciar Den Den", "fa fa-envelope-o", "") ?>
 					<?= menu_link("admin-estatisticas", "Estatísticas", "fa fa-envelope-o", "") ?>

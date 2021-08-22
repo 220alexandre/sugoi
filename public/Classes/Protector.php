@@ -194,7 +194,9 @@ class Protector {
 			case "admin-combinacaocarpinteiro":
 			case "admin-combinacaoequips":
 			case "admin-batalhas":
+			case "admin-enviar-itens":
 			case "combateAssistirAdm":
+			case "admin-tripulaçoes":
 				$this->must_be_gm();
 				break;
 			case "eventoPirata":

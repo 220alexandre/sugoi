@@ -2248,6 +2248,22 @@
   vit: 15
   hp: 50000
   xp: 100
+  
+124:
+  id: 124
+  nome: Big Mom
+  img: 105
+  atk: 200
+  def: 100
+  agl: 30
+  res: 50
+  pre: 300
+  dex: 90
+  con: 100
+  vit: 10
+  hp: 1000000
+  xp: 100
+  battle_back: 1
 
 9998:
   id: 9998

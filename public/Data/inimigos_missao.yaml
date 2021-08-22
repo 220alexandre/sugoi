@@ -1009,23 +1009,23 @@
 21:
   nome_bom_1: Lutador do Novo Mundo
   img_bom_1: 227
-  skin_bom_1: 3
+  skin_bom_1: 0
 
   nome_mau_1: Lutador do Novo Mundo
   img_mau_1: 227
-  skin_mau_1: 3
+  skin_mau_1: 0
 
   nome_bom_0: Lutador do Novo Mundo
   img_bom_0: 227
-  skin_bom_0: 3
+  skin_bom_0: 0
 
   nome_mau_0: Lutador do Novo Mundo
   img_mau_0: 227
-  skin_mau_0: 3
+  skin_mau_0: 0
 
   cod: 1
-  hp: 4000
-  hp_max: 4000
+  hp: 5000
+  hp_max: 50000
   mp: 500
   mp_max: 500
   lvl: 50
@@ -1128,6 +1128,69 @@
       nome_mau_1: Tiro Duplo
       nome_bom_0: Tiro Duplo
       nome_mau_0: Tiro Duplo
+      dano: 50
+      consumo: 3
+      area: 2
+      espera: 0
+23:
+  nome_bom_1: Big Mon
+  img_bom_1: 368
+  skin_bom_1: 0
+
+  nome_mau_1: Big Mon
+  img_mau_1: 368
+  skin_mau_1: 0
+
+  nome_bom_0: Big Mon
+  img_bom_0: 368
+  skin_bom_0: 0
+
+  nome_mau_0: Big Mon
+  img_mau_0: 368
+  skin_mau_0: 0
+
+  cod: 1
+  hp: 12000
+  hp_max: 12000
+  mp: 5000
+  mp_max: 5000
+  lvl: 75
+  atk: 250
+  def: 50
+  agl: 50
+  res: 1
+  pre: 100
+  dex: 100
+  con: 1
+  haki_esq: 20
+  haki_cri: 50
+  classe: 2
+  classe_score: 6500
+  akuma: 0
+  habilidades:
+    - tipo: 1
+      nome_bom_1: Golpe com a força do sol
+      nome_mau_1: Golpe com a força do sol
+      nome_bom_0: Golpe com a força do sol
+      nome_mau_0: Golpe com a força do sol
+      dano: 70
+      consumo: 3
+      area: 1
+      espera: 0
+    - tipo: 1
+      nome_bom_1: Investida Imperial
+      nome_mau_1: Investida Imperial
+      nome_bom_0: Investida Imperial
+      nome_mau_0: Investida Imperial
+      dano: 40
+      consumo: 3
+      area: 3
+      espera: 0
+    - tipo: 1
+      nome_bom_1: Avanço sinérgico
+      nome_mau_1: Avanço sinérgico
+      nome_bom_0: Avanço sinérgico
+      nome_mau_0: Avanço sinérgico
       dano: 50
       consumo: 3
       area: 2
