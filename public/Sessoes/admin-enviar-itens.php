@@ -5,7 +5,7 @@
 
     </div>
     <div class="panel-body">
-    <form action="../Scripts/Adm/enviar-itens.php" method="post">
+    <form action="/Scripts/Adm/enviar-itens.php" method="post">
             <label>ID da conta</label>
             <input type="text" name="id" class="form-control"  ></input>
             <label>Codigo do item</label>

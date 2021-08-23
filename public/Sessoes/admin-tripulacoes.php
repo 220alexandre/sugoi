@@ -1,3 +1,11 @@
+<?php
+$pagina = 1;
+$topicos_por_pagina = 1;
+
+if (isset($_GET["pagina"]) && validate_number($_GET["pagina"])) {
+    $pagina = $_GET["pagina"];
+}
+?>
 <div class="panel-heading">
     Tripulaçoes
 </div>
@@ -33,4 +41,5 @@
         <?php endforeach; ?>
         </tbody>
     </table>
+
 </div>
