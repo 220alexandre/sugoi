@@ -24,11 +24,11 @@ function has_mapa() {
     <div class="container-fluid">
         <div>
             <ul class="nav navbar-nav">
-            <!-- <li class="hidden-sm hidden-xs" data-toggle="tooltip" title="Estamos em fase BETA!" data-placement="bottom">
+            <li class="hidden-sm hidden-xs" data-toggle="tooltip" title="Estamos em fase BETA!" data-placement="bottom">
                     <a href="./?ses=beta" class="link_content">
                         BETA
                     </a>
-                </li>-->
+                </li>
                 <li data-toggle="tooltip" title="A bandeira da sua tripulação" data-placement="bottom">
                     <a class="link_content" href="./?ses=bandeira">
                         <img height="21px" src="Imagens/Bandeiras/img.php?cod=<?= $userDetails->tripulacao["bandeira"]; ?>&f=<?= $userDetails->tripulacao["faccao"]; ?>"/>
