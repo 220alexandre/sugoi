@@ -2,7 +2,7 @@
     <h3> Mandar Den Den Global </h3>
     </div>
     <div class="panel-body">
-        <form action="../Scripts/Adm/enviar-den-den.php" method="post">
+        <form action="Scripts/Adm/enviar-den-den.php" method="post">
             <label>Assunto:</label>
             <input type="text" name="assunto" class="form-control"  ></input>
             <label>Mensagem:</label>

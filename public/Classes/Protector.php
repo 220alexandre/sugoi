@@ -192,6 +192,7 @@ class Protector {
 			case "admin-news":
 			case "admin-mails":
 			case "admin-combinacaocarpinteiro":
+			case "admin-tripulacoes":
 			case "admin-combinacaoequips":
 			case "admin-batalhas":
 			case "admin-enviar-itens":

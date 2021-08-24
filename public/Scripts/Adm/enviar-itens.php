@@ -12,7 +12,7 @@ $okok		= $protector->post_value_or_exit('okok');
 
 
 
-$connection->run("INSERT INTO tb_usuario_itens (`id`, `cod_item`, `tipo_item`,`quant`, `novo`, `okok`) VALUES (?, ?, ?, ?,?, ?, )", 'iiiiii', [
+$connection->run("INSERT INTO tb_usuario_itens (`id`, `cod_item`, `tipo_item`,`quant`, `novo`, `okok`) VALUES (?, ?, ?, ?, ?, ?)", 'iiiiii', [
 	$id_trip,
     $cod_item,
     $tipo_itemo,
