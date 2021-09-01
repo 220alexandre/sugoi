@@ -6,7 +6,7 @@ define('DB_PASS',               '');
 define('DB_NAME',               'sugoi_v2');
 
 /* OCEANO */
-define('OCEANO_SERVER',         '3.137.122.53:9090');
+define('OCEANO_SERVER',         'sugoigame.com.br:9090');
 
 /* PAGSEGURO */
 define('PS_ENV',                'sandbox');    // production, sandbox
