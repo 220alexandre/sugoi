@@ -15,7 +15,7 @@ if ($personagem["xp"] < $personagem["xp_max"]) {
     $protector->exit_error("Esse personagem nao tem experiência suficiente para evoluir.");
 }
 
-if ($personagem["lvl"] >= 500) {
+if ($personagem["lvl"] >= LEVEL_MAX) {
     $protector->exit_error("Esse personagem já atingiu o nível máximo.");
 }
 

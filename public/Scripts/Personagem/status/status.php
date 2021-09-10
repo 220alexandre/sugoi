@@ -152,7 +152,7 @@ if (!$pers) {
             <div class="panel-body">
                 <?php render_personagem_status_bars($pers); ?>
 
-                <?php if ($pers["xp"] >= $pers["xp_max"] AND $pers["lvl"] < 40) : ?>
+                <?php if ($pers["xp"] >= $pers["xp_max"] AND $pers["lvl"] < LEVEL_MAX) : ?>
                     <p>
                         <button id="status_evoluir"
                                 href="link_Personagem/personagem_evoluir.php?cod=<?= $pers["cod"] ?>"
