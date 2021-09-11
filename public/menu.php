@@ -277,13 +277,6 @@ function super_menu_can_be_active($menu) {
 				<div id="menu-events" class="collapse <?= super_menu_in_out("eventos") ?>">
 					<ul class="vertical-nav nav navbar-nav">
 						<?= menu_link("lojaEvento", "Loja de Eventos", "fa fa-certificate", ""); ?>
-						<?/*= menu_link("eventoAnoNovo", "Evento de Ano Novo", "fa fa-bolt", ""); */?>
-						<?/*= menu_link("eventoNatal", "Evento de Natal", "fa fa-bolt", "");*/?>
-						<?/*= menu_link("eventoHalloween", "Semana do Terror", "fa fa-bolt", ""); */?>
-						<?/*= menu_link("eventoCriancas", "Semana das Crianças", "fa fa-bolt", ""); */?>
-						<?/*= menu_link("eventoIndependencia", "Evento da Independência", "fa fa-bolt", ""); */?>
-						<?/*= menu_link("eventoDiaPais", "Dia dos Pais", "fa fa-bolt", ""); */?>
-
 						<?php $evento_periodico_ativo = get_value_varchar_variavel_global(VARIAVEL_EVENTO_PERIODICO_ATIVO); ?>
 						<?php if ($evento_periodico_ativo == "eventoLadroesTesouro"): ?>
 							<?= menu_link("eventoLadroesTesouro", "Caça aos ladrões de tesouro", "fa fa-bolt", ""); ?>
@@ -293,6 +286,18 @@ function super_menu_can_be_active($menu) {
 							<?= menu_link("boss", "Caça ao Chefão", "fa fa-bolt", ""); ?>
 						<?php elseif ($evento_periodico_ativo == "eventoPirata"): ?>
 							<?= menu_link("eventoPirata", "Caça aos Piratas", "fa fa-bolt", ""); ?>
+						<?php elseif ($evento_periodico_ativo == "eventoNatal"): ?>
+							<?= menu_link("eventoNatal", "Evento de Natal", "fa fa-bolt", ""); ?>
+						<?php elseif ($evento_periodico_ativo == "eventoCriancas"): ?>
+							<?= menu_link("eventoCriancas", "Semana das Crianças", "fa fa-bolt", ""); ?>
+						<?php elseif ($evento_periodico_ativo == "eventoHalloween"): ?>
+							<?= menu_link("eventoHalloween", "eventoHalloween", "fa fa-bolt", ""); ?>					
+						<?php elseif ($evento_periodico_ativo == "eventoIndependencia"): ?>
+							<?= menu_link("eventoIndependencia", "Evento da Independência", "fa fa-bolt", ""); ?>
+						<?php elseif ($evento_periodico_ativo == "eventoDiaPais"): ?>
+							<?= menu_link("eventoDiaPais", "Dia dos Pais", "fa fa-bolt", ""); ?>
+						<?php elseif ($evento_periodico_ativo == "eventoAnoNovo"): ?>
+							<?= menu_link("eventoAnoNovo", "Evento de Ano Novo", "fa fa-bolt", ""); ?>
 						<?php endif; ?>
 					</ul>
 				</div>

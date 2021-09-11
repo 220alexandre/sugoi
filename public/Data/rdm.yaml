@@ -343,6 +343,7 @@
   con: 15
   vit: 15
   hp: 2000
+  zona: 3
   xp: 600
   loot:
     - cod: 0
@@ -371,6 +372,7 @@
   con: 15
   vit: 15
   hp: 2200
+  zona: 3
   xp: 600
   loot:
     - cod: 0
@@ -399,6 +401,7 @@
   con: 15
   vit: 15
   hp: 2400
+  zona: 3
   xp: 600
   loot:
     - cod: 0
@@ -431,6 +434,7 @@
   con: 15
   vit: 15
   hp: 2500
+  zona: 5
   xp: 600
   loot:
     - cod: 0
@@ -465,6 +469,7 @@
   con: 15
   vit: 15
   hp: 2900
+  zona: 5
   xp: 600
   loot:
     - cod: 0
@@ -499,6 +504,7 @@
   con: 15
   vit: 15
   hp: 2900
+  zona: 6
   xp: 600
   loot:
     - cod: 0
@@ -535,6 +541,7 @@
   con: 15
   vit: 15
   hp: 2900
+  zona: 6
   xp: 600
   loot:
     - cod: 0

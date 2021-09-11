@@ -206,8 +206,6 @@ class Protector {
 			case "eventoLadroesTesouro":
 			case "eventoChefesIlhas":
 			case "boss":
-				$this->need_evento_periodico_ativo($session);
-				break;
 			case "eventoSemanaAmizade":
 			case "eventoDiaPais":
 			case "eventoIndependencia":
@@ -215,6 +213,10 @@ class Protector {
 			case "eventoHalloween":
 			case "eventoNatal":
 			case "eventoAnoNovo":
+				$this->need_evento_periodico_ativo($session);
+				break;
+
+			
 				$this->exit_error("Evento indisponível");
 				break;
 			default:
