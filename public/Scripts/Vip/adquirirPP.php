@@ -33,7 +33,7 @@ if ($result->count() < 1) {
 	]);
 	$paymentId = $connection->last_id();
 
-	$p->addField('business',		'medeiros.dev@gmail.com');
+	$p->addField('business',		'l220alexandre170398@hotmail.com');
 	$p->addField('return',			'https://' . $_SERVER['HTTP_HOST'] . '/?ses=vipComprar&success');
 	$p->addField('cancel_return',	'https://' . $_SERVER['HTTP_HOST'] . '/?ses=vipComprar&cancel');
 	$p->addField('notify_url',		'https://' . $_SERVER['HTTP_HOST'] . '/Scripts/PayPal/retorno.php');
