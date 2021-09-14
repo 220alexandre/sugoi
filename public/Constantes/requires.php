@@ -1,6 +1,6 @@
 <?php
 $env = 'dev';
-if (in_array($_SERVER['HTTP_HOST'], ['sugoigame.com.br', 'map.sugoigame.com.br']))
+if (in_array($_SERVER['HTTP_HOST'], ['sugoigame.com.br', 'mapa.sugoigame.com.br']))
     $env = 'prod';
 
 require_once(dirname(__FILE__) . '/configs.' . $env . '.php');

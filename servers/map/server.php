@@ -1,5 +1,5 @@
 <?php
-$_SERVER["HTTP_HOST"] = isset($argv[1]) ? $argv[1] : "sugoigame.com.br";
+$_SERVER["HTTP_HOST"] = isset($argv[1]) ? $argv[1] : "mapa.sugoigame.com.br";
 
 require __DIR__ . '/vendor/autoload.php';
 require __DIR__ . '/../../public/Includes/database/mywrap.php';
@@ -25,6 +25,10 @@ $connection->run("SET sql_mode='NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION'");
 $navigation = new Navigation($connection);
 
 // Run the server application through the WebSocket protocol on port 9000
+<<<<<<< HEAD
 $app = new Ratchet\App('localhost', 9000, "0.0.0.0");
+=======
+$app = new Ratchet\App('localhost', 9090, "0.0.0.0");
+>>>>>>> c9d7fa62bd6a580d7399b1b002d0bc9339810073
 $app->route('/mar', new WsServer($connection, $navigation), ['*']);
 $app->run();
