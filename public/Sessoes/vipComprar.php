@@ -32,8 +32,8 @@
         <?php
         $methods = [
 			'pagseguro'		=> 'BRL',
-			'paypal_eur'	=> 'EUR',
-			'paypal_usd'	=> 'USD',
+			//'paypal_eur'	=> 'EUR',
+			//'paypal_usd'	=> 'USD',
 			// 'paypal_brl'	=> 'BRL'
 		];
         $symbols = [
