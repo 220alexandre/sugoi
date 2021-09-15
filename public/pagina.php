@@ -27,17 +27,15 @@ $facebook_url = "https://www.facebook.com/dialog/oauth?client_id=444646756906612
                     <div class="container-fluid">
                         <ul class="nav navbar-nav">
                             <li>
-                                <a href="login.php">Início</a>
+                                <a href="?ses=home">Início</a>
                             </li>
                             <li>
                                 <a href="./?ses=cadastro" class="link_content">Cadastrar</a>
                             </li>
                             <li>
-                                <a class="bt-facebook" href="<?= $facebook_url ?>">
-                                    <i class="fa fa-facebook-square fa-fw"></i>
-                                    Entrar com Facebook
-                                </a>
+                                <a href="./?ses=discord" class="link_content">Discord</a>
                             </li>
+
                         </ul>
                         <form class="navbar-form navbar-right" name="login" action="Scripts/Geral/logar.php" method="POST">
                             <div class="row">

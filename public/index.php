@@ -2,15 +2,6 @@
 $valida = "EquipeSugoiGame2012";
 require "Includes/conectdb.php";
 
-if (!$userDetails->conta AND
-	!isset($_GET["ses"]) AND
-	!isset($_GET["erro"]) AND
-	!isset($_GET["msg"]) AND
-	!isset($_GET["msg2"])
-) {
-	header("location: ./login.php");
-	exit;
-}
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
