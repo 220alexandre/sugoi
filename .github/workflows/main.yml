@@ -2,7 +2,7 @@ name: Deploy
 
 on:
   push:
-    branches: [ prod ]
+    branches: [ main ]
   workflow_dispatch:
 
 jobs:
@@ -21,4 +21,5 @@ jobs:
             cd /var/www/sugoi
 
             git status
-            git pull origin prod
+            git pull
+            pm2 update
