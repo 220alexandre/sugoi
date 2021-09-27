@@ -31,4 +31,7 @@ $connection->run(
 );
 
 $connection->run("DELETE FROM tb_reset_senha_token WHERE conta_id = ?", "i", $conta["conta_id"]);
+
+
+header("location:../../?msg2=Senha alterada! Efetue login para começar a jogar!");
 exit;
