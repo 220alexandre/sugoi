@@ -326,6 +326,8 @@ function super_menu_can_be_active($menu) {
 						<?= menu_link("recuperarSenha", "Recuperar Senha", "fa fa-envelope-o", "") ?>
 						<?= menu_link("regras", "Regras e Punições", "fa fa-ban", "") ?>
 						<?= menu_link("politica", "Política de Privacidade", "fa fa-th-list", "") ?>
+						<?= menu_link("aviso", "Aviso Legal", "fa fa-th-list", "") ?>
+						<?= menu_link("termos", "Termos de Uso", "fa fa-th-list", "") ?>
 					</ul>
 				</div>
 			<?php endif; ?>

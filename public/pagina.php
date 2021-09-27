@@ -243,6 +243,8 @@ $facebook_url = "https://www.facebook.com/dialog/oauth?client_id=444646756906612
                 Sugoi Game <?=date('Y');?>
                 - <a href="./?ses=politica" class="link_content">Política de Privacidade</a>
                 - <a href="./?ses=regras" class="link_content">Regras e Punições</a><br/>
+                - <a href="./?ses=aviso" class="link_content">Aviso Legal</a><br/>
+                - <a href="./?ses=termos" class="link_content">Termos e Condições</a><br/>
                 Personagens e desenhos © CopyRight 1997 by Eiichiro Oda. Todos os direitos reservados
             </div>
         </div>
