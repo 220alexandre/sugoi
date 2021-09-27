@@ -1,5 +1,8 @@
 <?php
 require_once "database/mywrap.php";
+require_once 'PHPMailer/src/Exception.php';
+require_once 'PHPMailer/src/PHPMailer.php';
+require_once 'PHPMailer/src/SMTP.php';
 
 // mysqli
 $connection = new mywrap_con();

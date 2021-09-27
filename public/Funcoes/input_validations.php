@@ -1,6 +1,7 @@
 <?php
 function validate_email($str) {
-    return preg_match(EMAIL_FORMAT, strtolower($str));
+    //return preg_match(EMAIL_FORMAT, strtolower($str));
+    return filter_var($str, FILTER_VALIDATE_EMAIL);
 }
 
 function validate_alphanumeric($str) {

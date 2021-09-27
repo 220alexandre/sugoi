@@ -1,4 +1,5 @@
 <?php
+require_once(dirname(__FILE__) . "/Mailer.php");
 include_once(dirname(__FILE__) . "/Alerts.php");
 include_once(dirname(__FILE__) . "/BuffTripulacao.php");
 include_once(dirname(__FILE__) . "/Campanha.php");
