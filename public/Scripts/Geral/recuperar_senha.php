@@ -1,6 +1,7 @@
 <?php
 $valida = "EquipeSugoiGame2012";
 include "../../Includes/conectdb.php";
+ini_set('default_charset','UTF-8'); 
 
 $protector->reject_conta();
 

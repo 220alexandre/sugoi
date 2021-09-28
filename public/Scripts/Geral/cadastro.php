@@ -1,5 +1,6 @@
 <?php
 include "../../Includes/conectdb.php";
+ini_set('default_charset','UTF-8'); 
 
 if (!isset($_POST["nome"])
     OR !isset($_POST["email"]) || !validate_email($_POST["email"])
