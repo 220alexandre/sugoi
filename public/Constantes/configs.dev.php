@@ -15,8 +15,8 @@ define('PS_TOKEN_SANDBOX',      '800C217DF422454A82AF62C05BA8C06A');
 define('PS_TOKEN_PRODUCTION',   NULL);
 
 /*email*/
-define('EMAIL_ATIVO' false);
-define('EMAIL_HOST', '11111');
-define('EMAIL_PORT', 1111);
-define('EMAIL_EMAIL', '111111');
-define('EMAIL_PASS', '11111');
+define('EMAIL_ATIVO', true);
+define('EMAIL_HOST', 'smtp.gmail.com');
+define('EMAIL_PORT', 465);
+define('EMAIL_EMAIL', 'sugoigame.em@gmail.com');
+define('EMAIL_PASS', 'lucasale22');
