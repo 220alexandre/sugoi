@@ -38,6 +38,7 @@ ini_set('default_charset','UTF-8');
 			}
 		}
 	</script>
+	<script data-ad-client="ca-pub-6911680303950528" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 	<?php if ($_SERVER['HTTP_HOST'] == 'sugoigame.com.br') { ?>
 	<script data-ad-client="ca-pub-6665062829379662" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 	<?php } ?>
@@ -208,7 +209,7 @@ ini_set('default_charset','UTF-8');
 
 
 <script src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.9"></script>
-<script data-ad-client="ca-pub-6911680303950528" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
 
 <script type="text/javascript">
 	$(function () {
