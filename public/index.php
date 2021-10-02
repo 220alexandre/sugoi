@@ -1,6 +1,7 @@
 <?php
 $valida = "EquipeSugoiGame2012";
 require "Includes/conectdb.php";
+ini_set('default_charset','UTF-8'); 
 
 ?>
 <!DOCTYPE html>
@@ -207,6 +208,7 @@ require "Includes/conectdb.php";
 
 
 <script src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.9"></script>
+<script data-ad-client="ca-pub-6911680303950528" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
 <script type="text/javascript">
 	$(function () {
