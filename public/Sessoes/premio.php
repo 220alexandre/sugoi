@@ -18,7 +18,6 @@
 
 
             <form method="post">
-              <input type="text">
             <button class="link_send btn btn-success" href="link_Eventos\premios.php">
             Receber as recompensas
         </button>
