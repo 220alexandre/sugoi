@@ -220,6 +220,13 @@ $facebook_url = "https://www.facebook.com/dialog/oauth?client_id=444646756906612
                                     </div>
                                 <?php endif; ?>
                             <?php endif; ?>
+                            <div id="fundo">
+                                <?php if ($userDetails->conta["ativacao"]): ?>
+                                    <div class="alert alert-danger" role="alert">
+                                        Sua conta ainda não foi ativada. Quando ativar sua conta você receberá
+                                        600 Dobrões de Ouro. Verifique seu E-mail.
+                                    </div>
+                                <?php endif; ?>
 
                             <?php $convocacao_torneio = $connection->run("SELECT * FROM tb_torneio_inscricao WHERE tripulacao_id = ?", "i", array($userDetails->tripulacao["id"])); ?>
                             <?php if ($convocacao_torneio->count()): ?>

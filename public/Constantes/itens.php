@@ -22,4 +22,4 @@ define('TIPO_ITEM_MISSAO',              18);
 define('TIPO_MISSAO_POR_ITEM_NAVEGAR',  1);
 define('TIPO_MISSAO_POR_ITEM_LUTAR',    2);
 
-define('LIMITE_USOS_ISCA_DIA',          10);
+define('LIMITE_USOS_ISCA_DIA',          50);

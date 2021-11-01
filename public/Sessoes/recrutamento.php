@@ -155,11 +155,6 @@
         Medalhas de Recrutamento
     </h4>
 
-    <p>
-        Quando um amigo recrutado colocar Moedas de Ouro na conta você será recompensado com uma Medalha de
-        Recrutamento
-    </p>
-
     <div class="row">
         <?php foreach ($recompensas as $id => $recompensa): ?>
             <div class="list-group-item col-md-4">

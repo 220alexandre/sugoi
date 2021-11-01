@@ -112,6 +112,11 @@ class UserDetails {
 		$this->connection->run("UPDATE tb_conta SET gold = gold + ? WHERE conta_id = ?",
 			"ii", array($quant, $this->conta["conta_id"]));
 	}
+	public function add_medalha($quant) {
+
+		$this->connection->run("UPDATE tb_conta SET medalhas_recrutamento = medalhas_recrutamento + ? WHERE conta_id = ?",
+			"ii", array($quant, $this->conta["conta_id"]));
+	}
 
 	protected function _update_last_logon() {
 		global $_SERVER;
@@ -147,6 +152,10 @@ class UserDetails {
 		}
 		if ($this->vip["coup_de_burst_duracao"] < $tempo AND $this->vip["coup_de_burst_duracao"] != 0) {
 			$this->connection->run("UPDATE tb_vip SET coup_de_burst = '0', coup_de_burst_duracao = '0' WHERE id= ?",
+				"i", $this->tripulacao["id"]);
+		}
+		if ($this->vip["formacoes_duracao"] < $tempo AND $this->vip["formacoes_duracao"] != 0) {
+			$this->connection->run("UPDATE tb_vip SET formacoes = '0', formacoes_duracao = '0' WHERE id= ?",
 				"i", $this->tripulacao["id"]);
 		}
 		if ($this->vip["formacoes_duracao"] < $tempo AND $this->vip["formacoes_duracao"] != 0) {
@@ -1457,12 +1466,19 @@ class UserDetails {
 		if ($bonus = $this->buffs->get_efeito("multiplicador_xp_lvl_max")) {
 			$quant_lvl_max *= $bonus;
 		}
+		$quant_max = $quant;
+		if ($bonus = $this->buffs->get_efeito("multiplicador_xp")) {
+			$quant_max *= $bonus;
+		}
 
 		$this->connection->run("UPDATE tb_personagens SET xp = xp + ? WHERE id = ? AND lvl < 50 AND ativo = 1",
 			"ii", array($quant, $this->tripulacao["id"]));
 
 		$this->connection->run("UPDATE tb_personagens SET xp = xp + ? WHERE id = ? AND lvl >= 50 AND ativo = 1",
 			"ii", array($quant_lvl_max, $this->tripulacao["id"]));
+			
+		$this->connection->run("UPDATE tb_personagens SET xp = xp + ? WHERE id = ? AND lvl >= 50 AND ativo = 1",
+			"ii", array($quant_max, $this->tripulacao["id"]));
 	}
 
 	public function xp_for_profissao($quant, $prof) {

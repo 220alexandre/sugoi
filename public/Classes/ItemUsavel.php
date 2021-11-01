@@ -843,6 +843,17 @@ class ItemUsavel {
 			"message" => "Bônus ativo!"
 		);
 	}
+	public function multiplicador_xp_normal($item, $params) {
+		if ($this->userDetails->buffs->get_efeito("multiplicador_xp")) {
+			$this->protector->exit_error("Você já tem um efeito similar ativo");
+		}
+
+		$this->userDetails->buffs->add_buff(29, $params[1] * 60 * 60);
+
+		return array(
+			"message" => "Bônus ativo!"
+		);
+	}
 
 	public function aprende_receita_forja_random() {
 		$receita = $this->connection->run(

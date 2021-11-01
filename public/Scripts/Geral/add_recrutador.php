@@ -23,9 +23,7 @@ if ($result->count()) {
     $protector->exit_error("Você já foi recrutado");
 }
 
-if ((time() - strtotime($userDetails->conta["cadastro"])) > (7 * 24 * 60 * 60)) {
-    $protector->exit_error("Sua conta é muita antiga para ser recrutada");
-}
+
 
 $result = $connection->run("SELECT * FROM tb_conta WHERE id_encrip=?", "s", $id_encrip);
 if (!$result->count()) {

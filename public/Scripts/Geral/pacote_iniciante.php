@@ -23,6 +23,8 @@ if (!$userDetails->can_add_item()) {
 }
 
 $userDetails->add_item(123, TIPO_ITEM_REAGENT, 1);
+$userDetails->add_item(121, TIPO_ITEM_REAGENT, 1);
+$userDetails->add_item(208, TIPO_ITEM_REAGENT, 1);
 
 $connection->run("UPDATE tb_afilhados SET bau_ganho = 1 WHERE afilhado = ?",
     "i", array($userDetails->conta["conta_id"]));

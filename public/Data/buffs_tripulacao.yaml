@@ -114,3 +114,9 @@
   descricao: Fantasia de Halloween. Quando entrar em combate, um de seus tripulantes se fantasiará e aparecerá como outro personagem do jogo.
   fantasia_imgs: 2,13;10,3;39,1;119,0;87,6;12,5
   fantasia_quant_trips: 1
+
+29:
+  icon: bonus_2.jpg
+  descricao: Com o Bonus ativo o jogador recebe 3x a mais XP completando missoes ou matando npcs.
+  bonus_xp: 2
+  nao_acumulativo: 1
