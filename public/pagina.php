@@ -203,6 +203,7 @@ $facebook_url = "https://www.facebook.com/dialog/oauth?client_id=444646756906612
                                         <b>Parabéns!</b> Você foi um dos melhores na Grande Era dos Piratas! Clique <a href="link_Eventos/recompensa_era.php" class="alert-link link_send">aqui</a> para receber sua recompensa.
                                     </div>
                                 <?php endif; ?>
+
                             <?php endif; ?>
                             <?php if (in_array($userDetails->tripulacao["id"], $yonkou) || in_array($userDetails->tripulacao["id"], $almirante)): ?>
                                 <?php $recompensa = $connection->run("SELECT * FROM tb_recompensa_recebida_grandes_poderes WHERE tripulacao_id = ?", "i", array($userDetails->tripulacao["id"]))->count(); ?>
@@ -227,6 +228,17 @@ $facebook_url = "https://www.facebook.com/dialog/oauth?client_id=444646756906612
                                         600 Dobrões de Ouro. Verifique seu E-mail.
                                     </div>
                                 <?php endif; ?>
+                                
+                                <div id="fundo">
+
+                                <?/*php if ($userDetails->tripulacao["id"]): ?>
+                                    <?php $recompensa = $connection->run("SELECT * FROM tb_campanha WHERE tripulacao_id = ?", "i", array($userDetails->tripulacao["id"]))->count(); ?>
+                                    <?php if (!$recompensa): ?>
+                                    <div class="alert alert-info" role="alert">Para liberar o modo Historia clique <a href="link_Eventos/campanha.php" class="alert-link link_send">aqui</a>
+                                    </div>
+                                    <?php endif; ?>
+                                    
+                                <?php endif;*/ ?>
 
                             <?php $convocacao_torneio = $connection->run("SELECT * FROM tb_torneio_inscricao WHERE tripulacao_id = ?", "i", array($userDetails->tripulacao["id"])); ?>
                             <?php if ($convocacao_torneio->count()): ?>

@@ -2272,6 +2272,23 @@
   xp: 100
   battle_back: 1
 
+125:    # Ilha Dawn
+  id: 22
+  nome: Higuma
+  img: 20
+  atk: 80
+  def: 7
+  agl: 10
+  res: 15
+  pre: 50
+  dex: 20
+  con: 15
+  vit: 140
+  hp: 8000
+  zona: 9001
+  xp: 500
+  battle_back: 1
+
 9998:
   id: 9998
   nome: Jogador Chefe da Ilha

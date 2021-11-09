@@ -1,3 +1,117 @@
+<div class="panel-heading">
+    Loja VIP
+</div>
+
+<div class="panel-body">
+    <?= ajuda("Loja VIP", "Aqui você consegue comprar recompensas exclusivas por Ouro"); ?>
+
+    <h3>
+        Você possui <?= mascara_numeros_grandes($userDetails->conta["gold"]) ?>
+        <img src="Imagens/Icones/Gold.png"> de Ouro para gastar
+    </h3>
+    <?php
+    $recompensas = DataLoader::load("loja_gold");
+
+    $reagents_db = $connection->run("SELECT * FROM tb_item_reagents")->fetch_all_array();
+    $reagents = array();
+    foreach ($reagents_db as $reagent) {
+        $reagents[$reagent["cod_reagent"]] = $reagent;
+    }
+    $equipamentos_db = $connection->run("SELECT * FROM tb_equipamentos")->fetch_all_array();
+    $equipamentos = array();
+    foreach ($equipamentos_db as $equip) {
+        $equipamentos[$equip["item"]] = $equip;
+    }
+    $comidas_db = $connection->run("SELECT * FROM tb_item_comida")->fetch_all_array();
+    $comidas = array();
+    foreach ($comidas_db as $comida) {
+        $comidas[$comida["cod_comida"]] = $comida;
+    }
+    ?>
+    <div class="row">
+        <?php foreach ($recompensas as $id => $recompensa): ?>
+            <div class="list-group-item col-xs-6 col-md-4">
+                <?php if (isset($recompensa["haki"])): ?>
+                    <p>
+                        <i class="fa fa-certificate"></i>
+                        <?= $recompensa["haki"] ?> pontos de Haki para toda a tripulação
+                    </p>
+                <?php endif; ?>
+                <?php if (isset($recompensa["xp"])): ?>
+                    <p>
+                        <?= $recompensa["xp"] ?> pontos de experiência para toda a tripulação
+                    </p>
+                <?php endif; ?>
+                <?php if (isset($recompensa["dobroes"])): ?>
+                    <p>
+                        <?= $recompensa["dobroes"] ?> <img src="Imagens/Icones/Dobrao.png">
+                    </p>
+                <?php endif; ?>
+                <?php if (isset($recompensa["akuma"])): ?>
+                    <div class="equipamentos_casse_6 pull-left">
+                        <img src="Imagens/Itens/100.png">
+                    </div>
+                    <p>
+                        Akuma no Mi aleatória
+                    </p>
+                <?php endif; ?>
+                <?php if (isset($recompensa["alcunha"])): ?>
+                    <?php $alcunha = $connection->run("SELECT * FROM tb_titulos WHERE cod_titulo = ?", "i", array($recompensa["alcunha"]))->fetch_array(); ?>
+                    <p>
+                        Alcunha: <?= $alcunha["nome"]; ?>
+                    </p>
+                <?php endif; ?>
+                <?php if (isset($recompensa["img"]) && isset($recompensa["skin"])): ?>
+                    <p>Aparência exclusiva</p>
+                    <p>
+                        <img src="Imagens/Personagens/Icons/<?= get_img(array("img" => $recompensa["img"], "skin_r" => $recompensa["skin"]), "r") ?>.jpg">
+                    </p>
+                    <p>
+                        <img src="Imagens/Personagens/Big/<?= get_img(array("img" => $recompensa["img"], "skin_c" => $recompensa["skin"]), "c") ?>.jpg">
+                    </p>
+                <?php endif; ?>
+                <?php if (isset($recompensa["tipo_item"])): ?>
+                    <?php if ($recompensa["tipo_item"] == TIPO_ITEM_REAGENT): ?>
+                        <div class="clearfix">
+                            <div class="equipamentos_casse_1 pull-left">
+                                <img src="Imagens/Itens/<?= $reagents[$recompensa["cod_item"]]["img"] ?>.png">
+                            </div>
+                            <p>
+                                <?= $reagents[$recompensa["cod_item"]]["nome"] ?>
+                                x <?= $recompensa["quant"] ?>
+                            </p>
+                        </div>
+                    <?php elseif ($recompensa["tipo_item"] == TIPO_ITEM_EQUIPAMENTO): ?>
+                        <?= info_item_with_img($equipamentos[$recompensa["cod_item"]], $equipamentos[$recompensa["cod_item"]], FALSE, FALSE, FALSE) ?>
+                    <?php elseif ($recompensa["tipo_item"] == TIPO_ITEM_COMIDA): ?>
+                        <div class="clearfix">
+                            <div class="equipamentos_casse_1 pull-left">
+                                <img src="Imagens/Itens/<?= $comidas[$recompensa["cod_item"]]["img"] ?>.png">
+                            </div>
+                            <p>
+                                <?= $comidas[$recompensa["cod_item"]]["nome"] ?>
+                                x <?= $recompensa["quant"] ?>
+                            </p>
+                        </div>
+                    <?php endif; ?>
+                <?php endif; ?>
+                <br/>
+                <p>
+                    Preço: <?= mascara_numeros_grandes($recompensa["preco"]) ?>
+                    <img src="Imagens/Icones/Gold.png">
+                </p>
+                <p>
+                    <button class="btn btn-success link_confirm" href="Eventos/vip.php?rec=<?= $id ?>"
+                            data-question="Deseja comprar este item?"
+                        <?= $userDetails->conta["gold"] >= $recompensa["preco"] ? "" : "disabled" ?>>
+                        Comprar
+                    </button>
+                </p>
+            </div>
+        <?php endforeach; ?>
+    </div>
+</div>
+
 <?php function render_vantagem($img, $titulo, $descricao, $duracao, $preco_gold, $preco_dobrao, $link_gold, $link_dobrao) { ?>
     <?php global $userDetails; ?>
     <li class="list-group-item">
@@ -49,7 +163,6 @@
     </li>
 <?php } ?>
 
-<div class="panel-heading">Gold Shop</div>
 <script type="text/javascript">
     $(function () {
         $("#renomeia_trip").click(function () {
@@ -69,7 +182,6 @@
     });
 </script>
 <div class="panel-body">
-    <?= ajuda("O que é o Gold SHop", "Adquira vantagens exclusivas com suas moedas de ouro.") ?>
 
     <ul class="list-group">
         <?php render_vantagem(

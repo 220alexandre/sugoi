@@ -13,7 +13,7 @@ class CampanhaEniesLobby extends Campanha {
 	}
 
 	public function progresso_etapa_1() {
-		return $this->_progresso_derrotar_rdm(125, 1);
+		return $this->_progresso_in_ilha(1);
 	}
 
 	public function finaliza_etapa_1() {

@@ -47,6 +47,11 @@
                         <?= $recompensa["dobroes"] ?> <img src="Imagens/Icones/Dobrao.png">
                     </p>
                 <?php endif; ?>
+                <?php if (isset($recompensa["medalha"])): ?>
+                    <p>
+                        <?= $recompensa["medalha"] ?> <img src="Imagens/Icones/MoedaRecrutamento.png">
+                    </p>
+                <?php endif; ?>
                 <?php if (isset($recompensa["akuma"])): ?>
                     <div class="equipamentos_casse_6 pull-left">
                         <img src="Imagens/Itens/100.png">

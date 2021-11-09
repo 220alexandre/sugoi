@@ -116,7 +116,7 @@ function super_menu_can_be_active($menu) {
 									<?= menu_link("campanhaImpelDown", "Impel Down", "fa fa-book", "") ?>
 								<?php endif; ?>
 								<?php if ($userDetails->tripulacao["campanha_enies_lobby"]): ?>
-									<?= menu_link("campanhaEniesLobby", "Enies Lobby", "fa fa-book", "") ?>
+									<?= menu_link("campanhaEniesLobby", "Modo Historia", "fa fa-book", "") ?>
 								<?php endif; ?>
 							</ul>
 						</div>

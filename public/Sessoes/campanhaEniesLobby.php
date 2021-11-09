@@ -1,5 +1,5 @@
 <div class="panel-heading">
-    Campanha de Enies Lobby.
+   Modo Historia
 </div>
 <?php render_campanha_css(); ?>
 

@@ -5,7 +5,7 @@ $protector->need_tripulacao();
 
 $recompensa_id = $protector->get_number_or_exit("rec");
 
-$recompensas = DataLoader::load("loja_evento");
+$recompensas = DataLoader::load("loja_gold");
 
 if (!isset($recompensas[$recompensa_id])) {
     $protector->exit_error("Recompensa inválida");
@@ -13,8 +13,8 @@ if (!isset($recompensas[$recompensa_id])) {
 
 $recompensa = $recompensas[$recompensa_id];
 
-if ($userDetails->tripulacao["moedas_evento"] < $recompensa["preco"]) {
-    $protector->exit_error("Você não possui medalhas de evento suficientes");
+if (mascara_numeros_grandes($userDetails->conta["gold"]) < $recompensa["preco"]) {
+    $protector->exit_error("Você não ouro suficiente");
 }
 
 if (isset($recompensa["akuma"])) {
@@ -59,7 +59,7 @@ if (isset($recompensa["skin"])) {
         "iii", array($userDetails->tripulacao["id"], $recompensa["img"], $recompensa["skin"]));
 }
 
-$connection->run("UPDATE tb_usuarios SET moedas_evento = moedas_evento - ? WHERE id = ?",
-    "ii", array($recompensa["preco"], $userDetails->tripulacao["id"]));
+$connection->run("UPDATE tb_conta SET gold = gold - ? WHERE conta_id = ?",
+    "ii", array($recompensa["preco"], $userDetails->conta["conta_id"]));
 
 $response->send_share_msg("Você recebeu sua recompensa!");

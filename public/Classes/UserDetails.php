@@ -1617,6 +1617,8 @@ class UserDetails {
 		}
 	}
 
+
+
 	public function reduz_gold($quant, $script) {
 		if ($this->conta["gold"] < $quant) {
 			return false;
