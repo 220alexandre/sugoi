@@ -29,6 +29,9 @@ function get_super_menu($sess = null) {
         case "recuperarSenha":
         case "politica":
         case "regras":
+        case "politica":
+        case "aviso":
+        case "termos":
             return "principal";
         case "campanhaImpelDown":
         case "campanhaEniesLobby":
@@ -121,6 +124,11 @@ function get_super_menu($sess = null) {
         case "admin-combinacaocarpinteiro":
         case "admin-combinacaoequips":
         case "admin-batalhas":
+        case "admin-enviar-itens":
+        case "admin-tripulacoes":
+        case "admin-reagents":
+        case "admin-itens-ilhas":
+        case "admin-inserir-itens-ilhas":
             return "admin";
         default:
             return false;

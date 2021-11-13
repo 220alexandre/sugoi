@@ -78,7 +78,7 @@
                             </div>
                             <p>
                                 <?= $reagents[$recompensa["cod_item"]]["nome"] ?>
-                                x <?= $recompensa["quant"] ?>
+                                 <?= $recompensa["quant"] ?>
                             </p>
                         </div>
                     <?php elseif ($recompensa["tipo_item"] == TIPO_ITEM_EQUIPAMENTO): ?>
