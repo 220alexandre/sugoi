@@ -106,6 +106,7 @@ function get_super_menu($sess = null) {
         case "eventoChefesIlhas":
         case "boss":
         case "eventoPirata":
+        case "premio":
             return "eventos";
         // case "faq":
         case "suporte":

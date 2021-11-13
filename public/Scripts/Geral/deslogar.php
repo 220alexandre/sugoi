@@ -18,4 +18,4 @@
 	mysql_query($query) or die ("nao foi possivel deslogar");
 	
 	mysql_close();
-	header("location:../../login.php");
+	header("location:../../?ses=home");

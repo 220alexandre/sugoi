@@ -299,6 +299,7 @@ function super_menu_can_be_active($menu) {
 						<?php elseif ($evento_periodico_ativo == "eventoAnoNovo"): ?>
 							<?= menu_link("eventoAnoNovo", "Evento de Ano Novo", "fa fa-bolt", ""); ?>
 						<?php endif; ?>
+						<?= menu_link("premio", "Receber Premios", "fa fa-bolt", ""); ?>
 					</ul>
 				</div>
 			<?php elseif ($userDetails->tripulacao && !$userDetails->in_ilha) : ?>
