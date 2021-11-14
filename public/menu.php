@@ -92,7 +92,6 @@ function super_menu_can_be_active($menu) {
 					<ul class="vertical-nav nav navbar-nav ">
 						<?= menu_link("home", "Home", "fa fa-home", "Mantenha-se informado! Nunca se sabe a hora em que algo importante poderá acontecer.") ?>
 						<?= menu_link("noticias", "Notícias", "fa fa-newspaper-o", "") ?>
-						<?= menu_link("recrutamento", "Recrute um Amigo", "fa fa-user-plus", "") ?>
 						<?= menu_link("akumaBook", "Akuma Book", "fa fa-book", "Veja quais foram as Akuma no Mi já encontradas") ?>
 						<?= menu_link("hall", "Hall da fama", "fa fa-trophy", "Veja quais foram os melhores jogadores de eras passadas") ?>
 						<?= menu_link("ranking", "Ranking", "fa fa-trophy", "") ?>

@@ -16,9 +16,9 @@ if (!$userDetails->can_add_item(4)) {
 
 $userDetails->add_item(121, TIPO_ITEM_REAGENT, 1);
 $userDetails->add_item(208, TIPO_ITEM_REAGENT, 1);
+$userDetails->add_item(123, TIPO_ITEM_REAGENT, 1);
 $userDetails->add_berries(1000000);
 $userDetails->add_item(143, TIPO_ITEM_ACESSORIO, 1, true);
-$userDetails->add_medalha(10);
 
 
 $connection->run("INSERT INTO tb_recompensa_premios (tripulacao_id) VALUE (?)",

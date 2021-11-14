@@ -38,7 +38,7 @@ define('EMAIL_FORMAT_2',			"/^[A-Za-z0-9_\\-\\.]+@[A-Za-z0-9_\\-\\.]{2,}\\.[A-Za
 define('DATA_FORMAT',				"/^\\d{4}-\\d{1,2}-\\d{1,2}$/");
 define('COORD_FORMAT',				"/^\\d{1,3}_\\d{1,3}$/");
 
-define('IS_BETA', 					true);
+define('IS_BETA', 					false);
 
 define('BONUS_DOBROES_ATIVACAO', 	500);
 
