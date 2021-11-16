@@ -20,10 +20,8 @@ function batalha() {
                 loadPagina(retorno.substr(1, (retorno.length - 1)));
             } else {
                 var scroll = $('.fight-zone').scrollLeft();
-                var scrollRelatorio = $('#relatorio-combate-content').scrollTop();
                 $("#navio_batalha").html(retorno);
                 $('.fight-zone').scrollLeft(scroll);
-                $('#relatorio-combate-content').scrollTop(scrollRelatorio);
 
                 toggleTurn($('#vez-combate').val() == 1 ? 'eu' : 'ele');
             }
