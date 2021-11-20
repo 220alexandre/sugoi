@@ -39,8 +39,6 @@
       tipo: 15
     - cod: 27
       tipo: 15
-    - cod: 189
-      tipo: 15
 
 2:
   id: 2
@@ -67,8 +65,6 @@
     - cod: 30
       tipo: 15
     - cod: 27
-      tipo: 15
-    - cod: 189
       tipo: 15
 
 3:
@@ -97,8 +93,6 @@
       tipo: 15
     - cod: 28
       tipo: 15
-    - cod: 189
-      tipo: 15
 4:
   id: 4
   nome: Filhote de Rei dos Mares
@@ -125,8 +119,6 @@
     - cod: 32
       tipo: 15
     - cod: 29
-      tipo: 15
-    - cod: 189
       tipo: 15
 5:
   id: 5
@@ -155,8 +147,6 @@
       tipo: 15
     - cod: 29
       tipo: 15
-    - cod: 189
-      tipo: 15
 6:
   id: 6
   nome: Rei dos Mares Gigante
@@ -184,8 +174,6 @@
       tipo: 15
     - cod: 29
       tipo: 15
-    - cod: 189
-      tipo: 15
 7:
   id: 7
   nome: Filhote de Dragão Marítmo
@@ -210,8 +198,6 @@
       tipo: 15
     - cod: 25
       tipo: 15
-    - cod: 189
-      tipo: 15
 8:
   id: 8
   nome: Dragão Marítmo
@@ -235,8 +221,6 @@
     - cod: 34
       tipo: 15
     - cod: 26
-      tipo: 15
-    - cod: 189
       tipo: 15
 9:
   id: 9
@@ -356,8 +340,6 @@
       tipo: 1
     - cod: 15
       tipo: 1
-    - cod: 189
-      tipo: 15
 16:
   id: 16
   nome: Tripulação pirata
@@ -385,8 +367,6 @@
       tipo: 1
     - cod: 1
       tipo: 13
-    - cod: 189
-      tipo: 15
 17:
   id: 17
   nome: Tripulação pirata
@@ -418,8 +398,6 @@
       tipo: 0
     - cod: 55
       tipo: 0
-    - cod: 189
-      tipo: 15
 18:
   id: 18
   nome: Tripulação pirata
@@ -453,8 +431,6 @@
       tipo: 0
     - cod: 51
       tipo: 15
-    - cod: 189
-      tipo: 15
 19:
   id: 19
   nome: Tripulação pirata
@@ -487,8 +463,6 @@
     - cod: 110
       tipo: 0
     - cod: 51
-      tipo: 15
-    - cod: 189
       tipo: 15
 20:
   id: 20
@@ -524,8 +498,6 @@
     - cod: 56
       tipo: 15
     - cod: 51
-      tipo: 15
-    - cod: 189
       tipo: 15
 21:
   id: 21
@@ -565,8 +537,6 @@
     - cod: 51
       tipo: 15
     - cod: 56
-      tipo: 15
-    - cod: 189
       tipo: 15
 22:    # Ilha Dawn
   id: 22

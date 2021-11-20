@@ -33,14 +33,6 @@
         quant: 500
       - tipo: berries
         quant: 20000
-    5:
-      - tipo: reagent
-        cod_item: 189
-        quant: 1
-      - tipo: xp
-        quant: 500
-      - tipo: berries
-        quant: 20000
     6:
       - tipo: reagent
         cod_item: 200
@@ -94,14 +86,6 @@
     3:
       - tipo: reagent
         cod_item: 152
-        quant: 1
-      - tipo: xp
-        quant: 500
-      - tipo: berries
-        quant: 20000
-    5:
-      - tipo: reagent
-        cod_item: 189
         quant: 1
       - tipo: xp
         quant: 500
@@ -166,14 +150,6 @@
         quant: 500
       - tipo: berries
         quant: 20000
-    5:
-      - tipo: reagent
-        cod_item: 189
-        quant: 1
-      - tipo: xp
-        quant: 500
-      - tipo: berries
-        quant: 20000
     6:
       - tipo: reagent
         cod_item: 200
@@ -231,14 +207,6 @@
     3:
       - tipo: reagent
         cod_item: 152
-        quant: 1
-      - tipo: xp
-        quant: 500
-      - tipo: berries
-        quant: 20000
-    5:
-      - tipo: reagent
-        cod_item: 189
         quant: 1
       - tipo: xp
         quant: 500
@@ -310,14 +278,6 @@
         quant: 500
       - tipo: berries
         quant: 20000
-    5:
-      - tipo: reagent
-        cod_item: 189
-        quant: 1
-      - tipo: xp
-        quant: 500
-      - tipo: berries
-        quant: 20000
     6:
       - tipo: reagent
         cod_item: 200
@@ -380,14 +340,6 @@
     3:
       - tipo: reagent
         cod_item: 152
-        quant: 1
-      - tipo: xp
-        quant: 500
-      - tipo: berries
-        quant: 20000
-    5:
-      - tipo: reagent
-        cod_item: 189
         quant: 1
       - tipo: xp
         quant: 500
@@ -464,14 +416,6 @@
       - tipo: berries
         quant: 20000
 
-    5:
-      - tipo: reagent
-        cod_item: 189
-        quant: 1
-      - tipo: xp
-        quant: 500
-      - tipo: berries
-        quant: 20000
     6:
       - tipo: reagent
         cod_item: 200
@@ -533,14 +477,6 @@
     3:
       - tipo: reagent
         cod_item: 152
-        quant: 1
-      - tipo: xp
-        quant: 500
-      - tipo: berries
-        quant: 20000
-    5:
-      - tipo: reagent
-        cod_item: 189
         quant: 1
       - tipo: xp
         quant: 500
@@ -614,14 +550,6 @@
         quant: 500
       - tipo: berries
         quant: 20000
-    5:
-      - tipo: reagent
-        cod_item: 189
-        quant: 1
-      - tipo: xp
-        quant: 500
-      - tipo: berries
-        quant: 20000
     6:
       - tipo: reagent
         cod_item: 200
@@ -686,14 +614,6 @@
     3:
       - tipo: reagent
         cod_item: 152
-        quant: 1
-      - tipo: xp
-        quant: 500
-      - tipo: berries
-        quant: 20000
-    5:
-      - tipo: reagent
-        cod_item: 189
         quant: 1
       - tipo: xp
         quant: 500
@@ -781,14 +701,6 @@
         quant: 500
       - tipo: berries
         quant: 20000
-    5:
-      - tipo: reagent
-        cod_item: 189
-        quant: 1
-      - tipo: xp
-        quant: 500
-      - tipo: berries
-        quant: 20000
     6:
       - tipo: reagent
         cod_item: 200
@@ -867,14 +779,6 @@
     3:
       - tipo: reagent
         cod_item: 152
-        quant: 1
-      - tipo: xp
-        quant: 500
-      - tipo: berries
-        quant: 20000
-    5:
-      - tipo: reagent
-        cod_item: 189
         quant: 1
       - tipo: xp
         quant: 500
@@ -966,14 +870,6 @@
         quant: 500
       - tipo: berries
         quant: 20000
-    5:
-      - tipo: reagent
-        cod_item: 189
-        quant: 1
-      - tipo: xp
-        quant: 500
-      - tipo: berries
-        quant: 20000
     6:
       - tipo: reagent
         cod_item: 200
@@ -1051,14 +947,6 @@
     3:
       - tipo: reagent
         cod_item: 152
-        quant: 1
-      - tipo: xp
-        quant: 500
-      - tipo: berries
-        quant: 20000
-    5:
-      - tipo: reagent
-        cod_item: 189
         quant: 1
       - tipo: xp
         quant: 500
@@ -1142,14 +1030,6 @@
     3:
       - tipo: reagent
         cod_item: 152
-        quant: 1
-      - tipo: xp
-        quant: 500
-      - tipo: berries
-        quant: 20000
-    5:
-      - tipo: reagent
-        cod_item: 189
         quant: 1
       - tipo: xp
         quant: 500
