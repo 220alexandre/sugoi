@@ -13,6 +13,11 @@ if (!isset($recompensas[$recompensa_id])) {
 
 $recompensa = $recompensas[$recompensa_id];
 
+$recompensado = $connection->run("SELECT count(*) AS total FROM tb_vip_mensal WHERE tripulacao_id = ? AND recompensa_id = ?",
+    "ii", array($userDetails->tripulacao["id"], $recompensa_id))->fetch_array()["total"];
+    if ($recompensado) {
+        $protector->exit_error("Você já recebeu essa recompensa");
+    }
 if (mascara_numeros_grandes($userDetails->conta["gold"]) < $recompensa["preco"]) {
     $protector->exit_error("Você não ouro suficiente");
 }
@@ -59,7 +64,11 @@ if (isset($recompensa["skin"])) {
         "iii", array($userDetails->tripulacao["id"], $recompensa["img"], $recompensa["skin"]));
 }
 
+$connection->run("INSERT INTO tb_vip_mensal (tripulacao_id, recompensa_id) VALUE (?, ?)",
+"ii", array($userDetails->tripulacao["id"], $recompensa_id));
+
 $connection->run("UPDATE tb_conta SET gold = gold - ? WHERE conta_id = ?",
     "ii", array($recompensa["preco"], $userDetails->conta["conta_id"]));
+
 
 $response->send_share_msg("Você recebeu sua recompensa!");
