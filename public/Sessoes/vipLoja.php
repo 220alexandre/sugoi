@@ -100,11 +100,7 @@
                     Preço: <?= mascara_numeros_grandes($recompensa["preco"]) ?>
                     <img src="Imagens/Icones/Gold.png">
                 </p>
-                <?php $recompensado = $connection->run("SELECT count(*) AS total FROM tb_evento_amizade_recompensa WHERE tripulacao_id = ? AND recompensa_id = ?",
-                        "ii", array($userDetails->tripulacao["id"], $id))->fetch_array()["total"]; ?>
-
                 <p>
-                    
                     <button class="btn btn-success link_confirm" href="Eventos/vip.php?rec=<?= $id ?>"
                             data-question="Deseja comprar este item?"
                         <?= $userDetails->conta["gold"] >= $recompensa["preco"] ? "" : "disabled" ?>>
