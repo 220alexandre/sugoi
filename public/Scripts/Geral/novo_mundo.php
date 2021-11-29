@@ -21,7 +21,7 @@ if (!$inilha) {
 }
 if ((($usuario["ilha"] == 42 AND $usuario["faccao"] == 1)
         OR ($usuario["ilha"] == 43 AND $usuario["faccao"] == 0))
-    AND $personagem[0]["lvl"] >= 85
+    AND $personagem[0]["lvl"] >= LEVEL_NOVO_MUNDO
 ) {
     $query = "UPDATE tb_usuarios SET x='20', y='166', mar_visivel = 0
 		WHERE id='" . $usuario["id"] . "'";

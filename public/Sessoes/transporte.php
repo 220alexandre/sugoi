@@ -36,7 +36,7 @@
                 </div>
             </div>
         </div>
-        <?php $result = $userDetails->capitao["lvl"] >= 80
+        <?php $result = $userDetails->capitao["lvl"] >= LEVEL_TRANSPORTE
             ? $connection->run("SELECT * FROM tb_mapa WHERE ilha<>'0' AND (ilha<>'47' OR ilha_dono = ?) AND ilha<>'101' ORDER BY ilha", "i", array($userDetails->tripulacao["id"]))
             : $connection->run("SELECT * FROM tb_mapa WHERE mar = ? AND ilha<>'0' AND ilha<>'47' AND ilha<>'101' ORDER BY ilha",
                 "i", $userDetails->ilha["mar"]); ?>
