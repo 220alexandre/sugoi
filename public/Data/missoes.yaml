@@ -2646,11 +2646,23 @@
   requisito_lvl: 50
   turnos: 70
   duracao: 600
-  recompensa_xp: 7000
+  recompensa_xp: 1000
   karma: 500
   recompensa_berries: 500000
   inimigos:
-    - 23
+    - 22
+    - 21
+    - 21
+    - 21
+    - 21
+    - 21
+    - 20
+    - 20
+    - 20
+    - 21
+    - 21
+    - 22
+    - 22
     - 22
     - 22
   batte_back: 1
@@ -2659,11 +2671,407 @@
   requisito_lvl: 50
   turnos: 70
   duracao: 600
-  recompensa_xp: 7000
+  recompensa_xp: 1000
   karma: 500
   recompensa_berries: 500000
   inimigos:
     - 23
     - 22 
+    - 22
+    - 21
+    - 21
+    - 21
+    - 21
+    - 21
+    - 20
+    - 20
+    - 20
+    - 21
+    - 21
+    - 22
+    - 22
+  batte_back: 1
+179:
+  requisito_lvl: 50
+  turnos: 70
+  duracao: 600
+  recompensa_xp: 1000
+  karma: 500
+  recompensa_berries: 500000
+  inimigos:
+    - 20
+    - 22 
+    - 22
+    - 21
+    - 21
+    - 21
+    - 21
+    - 21
+    - 20
+    - 20
+    - 20
+    - 21
+    - 21
+    - 22
+    - 22
+  batte_back: 1
+180:
+  requisito_lvl: 50
+  turnos: 70
+  duracao: 600
+  recompensa_xp: 1000
+  karma: 500
+  recompensa_berries: 500000
+  inimigos:
+    - 22
+    - 22 
+    - 22
+    - 21
+    - 21
+    - 21
+    - 21
+    - 21
+    - 20
+    - 20
+    - 20
+    - 21
+    - 21
+    - 22
+    - 22
+  batte_back: 1
+181:
+  requisito_lvl: 50
+  turnos: 70
+  duracao: 600
+  recompensa_xp: 1000
+  karma: 500
+  recompensa_berries: 500000
+  inimigos:
+    - 20
+    - 22 
+    - 22
+    - 21
+    - 21
+    - 21
+    - 21
+    - 21
+    - 20
+    - 20
+    - 20
+    - 21
+    - 21
+    - 22
+    - 22
+  batte_back: 1
+182:
+  requisito_lvl: 50
+  turnos: 70
+  duracao: 600
+  recompensa_xp: 1000
+  karma: 500
+  recompensa_berries: 500000
+  inimigos:
+    - 23
+    - 22 
+    - 22
+    - 21
+    - 21
+    - 21
+    - 21
+    - 21
+    - 20
+    - 20
+    - 20
+    - 21
+    - 21
+    - 22
+    - 22
+  batte_back: 1
+183:
+  requisito_lvl: 50
+  turnos: 70
+  duracao: 600
+  recompensa_xp: 1000
+  karma: 500
+  recompensa_berries: 500000
+  inimigos:
+    - 22
+    - 22 
+    - 22
+    - 21
+    - 21
+    - 21
+    - 21
+    - 21
+    - 20
+    - 20
+    - 20
+    - 21
+    - 21
+    - 22
+    - 22
+  batte_back: 1
+184:
+  requisito_lvl: 50
+  turnos: 70
+  duracao: 600
+  recompensa_xp: 1000
+  karma: 500
+  recompensa_berries: 500000
+  inimigos:
+    - 21
+    - 22 
+    - 22
+    - 21
+    - 21
+    - 21
+    - 21
+    - 21
+    - 20
+    - 20
+    - 20
+    - 21
+    - 21
+    - 22
+    - 22
+  batte_back: 1
+185:
+  requisito_lvl: 50
+  turnos: 70
+  duracao: 600
+  recompensa_xp: 1000
+  karma: 500
+  recompensa_berries: 500000
+  inimigos:
+    - 22
+    - 22 
+    - 22
+    - 21
+    - 21
+    - 21
+    - 21
+    - 21
+    - 20
+    - 20
+    - 20
+    - 21
+    - 21
+    - 22
+    - 22
+  batte_back: 1
+186:
+  requisito_lvl: 50
+  turnos: 70
+  duracao: 600
+  recompensa_xp: 1000
+  karma: 500
+  recompensa_berries: 500000
+  inimigos:
+    - 20
+    - 22 
+    - 22
+    - 21
+    - 21
+    - 21
+    - 21
+    - 21
+    - 20
+    - 20
+    - 20
+    - 21
+    - 21
+    - 22
+    - 22
+  batte_back: 1
+187:
+  requisito_lvl: 50
+  turnos: 70
+  duracao: 600
+  recompensa_xp: 1000
+  karma: 500
+  recompensa_berries: 500000
+  inimigos:
+    - 20
+    - 22 
+    - 22
+    - 21
+    - 21
+    - 21
+    - 21
+    - 21
+    - 20
+    - 20
+    - 20
+    - 21
+    - 21
+    - 22
+    - 22
+  batte_back: 1
+188:
+  requisito_lvl: 50
+  turnos: 70
+  duracao: 600
+  recompensa_xp: 1000
+  karma: 500
+  recompensa_berries: 500000
+  inimigos:
+    - 20
+    - 22 
+    - 22
+    - 21
+    - 21
+    - 21
+    - 21
+    - 21
+    - 20
+    - 20
+    - 20
+    - 21
+    - 21
+    - 22
+    - 22
+  batte_back: 1
+189:
+  requisito_lvl: 50
+  turnos: 70
+  duracao: 600
+  recompensa_xp: 1000
+  karma: 500
+  recompensa_berries: 500000
+  inimigos:
+    - 20
+    - 22 
+    - 22
+    - 21
+    - 21
+    - 21
+    - 21
+    - 21
+    - 20
+    - 20
+    - 20
+    - 21
+    - 21
+    - 22
+    - 22
+  batte_back: 1
+190:
+  requisito_lvl: 50
+  turnos: 70
+  duracao: 600
+  recompensa_xp: 1000
+  karma: 500
+  recompensa_berries: 500000
+  inimigos:
+    - 20
+    - 22 
+    - 22
+    - 21
+    - 21
+    - 21
+    - 21
+    - 21
+    - 20
+    - 20
+    - 20
+    - 21
+    - 21
+    - 22
+    - 22
+  batte_back: 1
+191:
+  requisito_lvl: 50
+  turnos: 70
+  duracao: 600
+  recompensa_xp: 1000
+  karma: 500
+  recompensa_berries: 500000
+  inimigos:
+    - 20
+    - 22 
+    - 22
+    - 21
+    - 21
+    - 21
+    - 21
+    - 21
+    - 20
+    - 20
+    - 20
+    - 21
+    - 21
+    - 22
+    - 22
+  batte_back: 1
+192:
+  requisito_lvl: 50
+  turnos: 70
+  duracao: 600
+  recompensa_xp: 1000
+  karma: 500
+  recompensa_berries: 500000
+  inimigos:
+    - 20
+    - 22 
+    - 22
+    - 21
+    - 21
+    - 21
+    - 21
+    - 21
+    - 20
+    - 20
+    - 20
+    - 21
+    - 21
+    - 22
+    - 22
+  batte_back: 1
+193:
+  requisito_lvl: 50
+  turnos: 70
+  duracao: 600
+  recompensa_xp: 1000
+  karma: 500
+  recompensa_berries: 500000
+  inimigos:
+    - 20
+    - 22 
+    - 22
+    - 21
+    - 21
+    - 21
+    - 21
+    - 21
+    - 20
+    - 20
+    - 20
+    - 21
+    - 21
+    - 22
+    - 22
+  batte_back: 1
+194:
+  requisito_lvl: 50
+  turnos: 70
+  duracao: 600
+  recompensa_xp: 1000
+  karma: 500
+  recompensa_berries: 500000
+  inimigos:
+    - 20
+    - 22 
+    - 22
+    - 21
+    - 21
+    - 21
+    - 21
+    - 21
+    - 20
+    - 20
+    - 20
+    - 21
+    - 21
+    - 22
     - 22
   batte_back: 1

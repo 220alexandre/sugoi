@@ -120,7 +120,7 @@
                     <li><a href="#categoria_2_sel" data-toggle="tab">Reputação</a></li>
                     <li><a href="#categoria_3_sel" data-toggle="tab">PVP</a></li>
                     <li><a href="#categoria_4_sel" data-toggle="tab">PVE</a></li>
-                    <!--<li><a href="#categoria_5_sel" data-toggle="tab">Exploração</a></li>-->
+                    <li><a href="#categoria_5_sel" data-toggle="tab">Exploração</a></li>
                 </ul>
             </div>
             <div class="tab-content">

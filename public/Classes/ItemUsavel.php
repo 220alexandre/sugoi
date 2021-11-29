@@ -1259,6 +1259,13 @@ class ItemUsavel {
 		return "Você recebeu um Mapa do Tesouro Especial!";
 	}
 
+	public function tatic7(){
+		$this->userDetails->add_tatic(7);
+	}
+	public function tatic30(){
+		$this->userDetails->add_tatic(30);
+	}
+
 	public function entrega_cabeca_abobora() {
 		if ($this->userDetails->ilha["ilha"] != 40) {
 			$this->protector->exit_error("Você precisa estar em Thriller Bark para usar este item");

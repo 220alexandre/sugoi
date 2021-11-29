@@ -117,6 +117,12 @@ class UserDetails {
 		$this->connection->run("UPDATE tb_conta SET medalhas_recrutamento = medalhas_recrutamento + ? WHERE conta_id = ?",
 			"ii", array($quant, $this->conta["conta_id"]));
 	}
+	public function add_tatic($dias){
+		$tempo_base = $userDetails->vip["tatic"] ? $userDetails->vip["tatic_duracao"] : atual_segundo();
+		$tempo = $tempo_base + ($dias * 86400);
+		$this->connection->run("UPDATE tb_vip SET tatic='1', tatic_duracao = ? WHERE id = ?",
+			"ii", array($tempo, $this->tripulacao["id"]));
+	}
 
 	protected function _update_last_logon() {
 		global $_SERVER;

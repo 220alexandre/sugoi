@@ -1025,7 +1025,7 @@
 
   cod: 1
   hp: 5000
-  hp_max: 50000
+  hp_max: 5000
   mp: 500
   mp_max: 500
   lvl: 50
@@ -1195,3 +1195,4 @@
       consumo: 3
       area: 2
       espera: 0
+    

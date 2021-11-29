@@ -18,8 +18,7 @@ if (!$pers) {
     <div class="col-md-12">
         <h4>
             Valor exato da recompensa:
-            <imgsrc
-            ="Imagens/Icones/Berries.png"/> <?= mascara_berries($pers["fama_ameaca"]) ?>
+            <imgsrc="Imagens/Icones/Berries.png"/> <?= mascara_berries($pers["fama_ameaca"]) ?>
         </h4>
         <h3>Prêmios disponíveis:</h3>
         <ul class="list-group">

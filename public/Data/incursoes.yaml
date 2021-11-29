@@ -1061,6 +1061,75 @@
         xp: 900
         berries: 260000
         battle_back: 38
+48:
+  niveis:
+    1:
+      recompensas:
+        - tipo_item: 15
+          cod_item: 155
+          quant: 3
+          tipo: reagent
+      1:
+        tripulacao: 37
+        xp: 880
+        berries: 240000
+        battle_back: 38
+      2:
+        tripulacao: 37
+        xp: 890
+        berries: 250000
+        battle_back: 38
+      3:
+        tripulacao: 37
+        xp: 900
+        berries: 260000
+        battle_back: 38
+49:
+  niveis:
+    1:
+      recompensas:
+        - tipo_item: 15
+          cod_item: 155
+          quant: 3
+          tipo: reagent
+      1:
+        tripulacao: 37
+        xp: 880
+        berries: 240000
+        battle_back: 38
+      2:
+        tripulacao: 37
+        xp: 890
+        berries: 250000
+        battle_back: 38
+      3:
+        tripulacao: 37
+        xp: 900
+        berries: 260000
+        battle_back: 38
+50:
+  niveis:
+    1:
+      recompensas:
+        - tipo_item: 15
+          cod_item: 155
+          quant: 3
+          tipo: reagent
+      1:
+        tripulacao: 37
+        xp: 880
+        berries: 240000
+        battle_back: 38
+      2:
+        tripulacao: 37
+        xp: 890
+        berries: 250000
+        battle_back: 38
+      3:
+        tripulacao: 37
+        xp: 900
+        berries: 260000
+        battle_back: 38        
 101:
   niveis:
     1:

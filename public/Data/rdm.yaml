@@ -2228,7 +2228,7 @@
   
 124:
   id: 124
-  nome: Big Mom
+  nome: Katakuri
   img: 105
   atk: 200
   def: 100
@@ -2243,20 +2243,35 @@
   battle_back: 1
 
 125:    # Ilha Dawn
-  id: 22
-  nome: Higuma
-  img: 20
-  atk: 80
-  def: 7
-  agl: 10
-  res: 15
-  pre: 50
-  dex: 20
-  con: 15
-  vit: 140
-  hp: 8000
-  zona: 9001
-  xp: 500
+  id: 125
+  nome: Donquixote Doflamingo
+  img: 106
+  atk: 180
+  def: 100
+  agl: 30
+  res: 50
+  pre: 300
+  dex: 90
+  con: 100
+  vit: 10
+  hp: 80000
+  xp: 1000
+  battle_back: 1
+
+126:    # Ilha Dawn
+  id: 126
+  nome: Issho Fujitora
+  img: 107
+  atk: 200
+  def: 100
+  agl: 30
+  res: 50
+  pre: 300
+  dex: 90
+  con: 100
+  vit: 10
+  hp: 100000
+  xp: 1000
   battle_back: 1
 
 9998:
