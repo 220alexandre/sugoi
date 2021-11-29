@@ -1025,7 +1025,14 @@
         quant: 500
       - tipo: berries
         quant: 10000000
-    
+    13:
+      - tipo: reagent
+        cod_item: 121
+        quant: 1
+      - tipo: xp
+        quant: 500
+      - tipo: berries
+        quant: 20000
 13:
   nome: Catástrofe nos Blues
   duracao: 12:00:00
@@ -1325,3 +1332,11 @@
         quant: 500
       - tipo: berries
         quant: 10000000
+    13:
+      - tipo: reagent
+        cod_item: 121
+        quant: 1
+      - tipo: xp
+        quant: 500
+      - tipo: berries
+        quant: 20000
