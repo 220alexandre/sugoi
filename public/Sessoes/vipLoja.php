@@ -184,7 +184,7 @@
 <div class="panel-body">
 
     <ul class="list-group">
-        <?php/* render_vantagem(
+        <?php render_vantagem(
             "tatics.png",
             "Táticas",
             "Defina uma posição fixa para cada tripulante antes de combates.",
@@ -239,7 +239,7 @@
             "Vip/coup_de_burst_comprar.php?tipo=dobrao"
         ); ?>
 
-        <?php render_vantagem(
+        <?/*php render_vantagem(
             "ocultar.jpg",
             "Camuflagem",
             "Esconda seu navio no oceano ficando invisível para os outros jogadores. Você só estará invisível enquanto estiver parado, quando navegar voltará a ser visível.",
