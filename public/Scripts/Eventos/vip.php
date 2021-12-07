@@ -18,7 +18,7 @@ $recompensado = $connection->run("SELECT count(*) AS total FROM tb_vip_mensal WH
     if ($recompensado) {
         $protector->exit_error("Você já recebeu essa recompensa");
     }
-if (mascara_numeros_grandes($userDetails->conta["gold"]) < $recompensa["preco"]) {
+if ($userDetails->conta["gold"] < $recompensa["preco"]) {
     $protector->exit_error("Você não ouro suficiente");
 }
 
