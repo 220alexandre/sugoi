@@ -166,8 +166,8 @@ class ItemUsavel {
 		$response->loot($recompensas, "Você Recebeu " . implode(", ", $recompensas));
 	}
 	public function abre_pacote_couro() {
-		if (!$this->userDetails->can_add_item(7)) {
-			$this->protector->exit_error("Seu inventário está cheio. Você precisa de 7 espaços livres para receber a recompensa");
+		if (!$this->userDetails->can_add_item(4)) {
+			$this->protector->exit_error("Seu inventário está cheio. Você precisa de 4 espaços livres para receber a recompensa");
 		}
 
 		$this->userDetails->add_item(25, TIPO_ITEM_REAGENT, rand(5, 8));
@@ -181,8 +181,8 @@ class ItemUsavel {
 		$response->loot($recompensas, "Você Recebeu " . implode(", ", $recompensas));
 	}
 	public function abre_pacote_escamas() {
-		if (!$this->userDetails->can_add_item(7)) {
-			$this->protector->exit_error("Seu inventário está cheio. Você precisa de 7 espaços livres para receber a recompensa");
+		if (!$this->userDetails->can_add_item(4)) {
+			$this->protector->exit_error("Seu inventário está cheio. Você precisa de 4 espaços livres para receber a recompensa");
 		}
 
 		$this->userDetails->add_item(30, TIPO_ITEM_REAGENT, rand(5, 8));
@@ -197,8 +197,8 @@ class ItemUsavel {
 		$response->loot($recompensas, "Você Recebeu " . implode(", ", $recompensas));
 	}
 	public function abre_pacote_osso() {
-		if (!$this->userDetails->can_add_item(7)) {
-			$this->protector->exit_error("Seu inventário está cheio. Você precisa de 7 espaços livres para receber a recompensa");
+		if (!$this->userDetails->can_add_item(4)) {
+			$this->protector->exit_error("Seu inventário está cheio. Você precisa de 4 espaços livres para receber a recompensa");
 		}
 
 		$this->userDetails->add_item(15, TIPO_ITEM_REAGENT, rand(5, 8));
@@ -212,8 +212,8 @@ class ItemUsavel {
 		$response->loot($recompensas, "Você Recebeu " . implode(", ", $recompensas));
 	}
 	public function abre_pacote_presa() {
-		if (!$this->userDetails->can_add_item(7)) {
-			$this->protector->exit_error("Seu inventário está cheio. Você precisa de 7 espaços livres para receber a recompensa");
+		if (!$this->userDetails->can_add_item(4)) {
+			$this->protector->exit_error("Seu inventário está cheio. Você precisa de 4 espaços livres para receber a recompensa");
 		}
 
 		$this->userDetails->add_item(20, TIPO_ITEM_REAGENT, rand(5, 8));
@@ -227,8 +227,8 @@ class ItemUsavel {
 		$response->loot($recompensas, "Você Recebeu " . implode(", ", $recompensas));
 	}
 	public function abre_pacote_minerios() {
-		if (!$this->userDetails->can_add_item(7)) {
-			$this->protector->exit_error("Seu inventário está cheio. Você precisa de 7 espaços livres para receber a recompensa");
+		if (!$this->userDetails->can_add_item(6)) {
+			$this->protector->exit_error("Seu inventário está cheio. Você precisa de 6 espaços livres para receber a recompensa");
 		}
 
 		$this->userDetails->add_item(51, TIPO_ITEM_REAGENT, rand(5, 8));
@@ -243,8 +243,8 @@ class ItemUsavel {
 		$response->loot($recompensas, "Você Recebeu " . implode(", ", $recompensas));
 	}
 	public function abre_pacote_madeiras() {
-		if (!$this->userDetails->can_add_item(7)) {
-			$this->protector->exit_error("Seu inventário está cheio. Você precisa de 7 espaços livres para receber a recompensa");
+		if (!$this->userDetails->can_add_item(3)) {
+			$this->protector->exit_error("Seu inventário está cheio. Você precisa de 3 espaços livres para receber a recompensa");
 		}
 
 		$this->userDetails->add_item(75, TIPO_ITEM_REAGENT, rand(5, 8));
