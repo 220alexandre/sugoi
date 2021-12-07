@@ -5,7 +5,7 @@ $protector->need_tripulacao();
 
 $recompensa_id = $protector->get_number_or_exit("rec");
 
-$recompensas = DataLoader::load("loja_gold");
+$recompensas = DataLoader::load("loja_realizacao");
 
 if (!isset($recompensas[$recompensa_id])) {
     $protector->exit_error("Recompensa inválida");
@@ -13,22 +13,13 @@ if (!isset($recompensas[$recompensa_id])) {
 
 $recompensa = $recompensas[$recompensa_id];
 
-$recompensado = $connection->run("SELECT count(*) AS total FROM tb_vip_mensal WHERE tripulacao_id = ? AND recompensa_id = ?",
-    "ii", array($userDetails->tripulacao["id"], $recompensa_id))->fetch_array()["total"];
-    if ($recompensado) {
-        $protector->exit_error("Você já recebeu essa recompensa");
-    }
-if (mascara_numeros_grandes($userDetails->conta["gold"]) < $recompensa["preco"]) {
-    $protector->exit_error("Você não ouro suficiente");
+
+if ($userDetails->tripulacao["realizacoes"] < $recompensa["preco"]) {
+    $protector->exit_error("Você não tem pontos suficientes");
 }
 
-if (isset($recompensa["logia"])) {
-    if (!$userDetails->add_item(rand(100, 110), 8 , 1, true)) {
-        $protector->exit_error("Seu inventário está lotado. Libere espaço antes de pegar sua recompensa");
-    }
-}
-if (isset($recompensa["zoan"])) {
-    if (!$userDetails->add_item(rand(100, 110), 10 , 1, true)) {
+if (isset($recompensa["akuma"])) {
+    if (!$userDetails->add_item(rand(100, 110), rand(8, 10), 1, true)) {
         $protector->exit_error("Seu inventário está lotado. Libere espaço antes de pegar sua recompensa");
     }
 }
@@ -69,11 +60,9 @@ if (isset($recompensa["skin"])) {
         "iii", array($userDetails->tripulacao["id"], $recompensa["img"], $recompensa["skin"]));
 }
 
-$connection->run("INSERT INTO tb_vip_mensal (tripulacao_id, recompensa_id) VALUE (?, ?)",
-"ii", array($userDetails->tripulacao["id"], $recompensa_id));
+$connection->run("UPDATE tb_usuarios SET realizacoes = realizacoes - ? WHERE id = ?",
+    "ii", array($recompensa["preco"], $userDetails->tripulacao["id"]));
 
-$connection->run("UPDATE tb_conta SET gold = gold - ? WHERE conta_id = ?",
-    "ii", array($recompensa["preco"], $userDetails->conta["conta_id"]));
 
 
 $response->send_share_msg("Você recebeu sua recompensa!");

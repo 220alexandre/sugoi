@@ -19,7 +19,7 @@
             <?= $realizacao["nome"] ?>
         </h4>
         <p><?= $realizacao["descricao"] ?></p>
-        <p><?= $realizacao["pontos"] ?> Pontos de Realização</p>
+        <p><?= $realizacao["pontos"] ?>  Pontos de Realização <img src="Imagens/Icones/Recompensas.png"></p>
 
         <?php if ($realizacao["titulo"]) : ?>
             <p>Titulo: <?= $realizacao["titulo"] ?></p>

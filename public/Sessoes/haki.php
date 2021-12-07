@@ -47,8 +47,8 @@
                         <form class="ajax_form form-inline" action="Haki/atacar_mestre" method="post" data-question="Deseja enfrentar o mestre?">
                             <h4>Treinos restantes: <?=$treinosLimite;?></h4>
                             <div class="form-group">
-                                <label>Informe quantos treinos simultâneos deseja fazer (Máximo 50):</label>
-                                <input id="select-quant-treino" class="form-control" name="quant" type="number" max="<?=min(50, $treinosLimite);?>" min="1" value="1" require />
+                                <label>Informe quantos treinos simultâneos deseja fazer (Máximo 6):</label>
+                                <input id="select-quant-treino" class="form-control" name="quant" type="number" max="<?=min(6, $treinosLimite);?>" min="1" value="1" require />
                             </div>
 
                             <script type="text/javascript">

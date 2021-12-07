@@ -3,7 +3,7 @@
 </div>
 
 <div class="panel-body">
-    <?= ajuda("Loja VIP", "Aqui você consegue comprar recompensas exclusivas por Ouro"); ?>
+    <?= ajuda("Loja VIP", "Aqui você consegue comprar recompensas exclusivas por Ouro apenas uma vez ao mes"); ?>
 
     <h3>
         Você possui <?= mascara_numeros_grandes($userDetails->conta["gold"]) ?>
@@ -47,13 +47,23 @@
                         <?= $recompensa["dobroes"] ?> <img src="Imagens/Icones/Dobrao.png">
                     </p>
                 <?php endif; ?>
-                <?php if (isset($recompensa["akuma"])): ?>
+                <?php if (isset($recompensa["logia"])): ?>
                     <div class="equipamentos_casse_6 pull-left">
                         <img src="Imagens/Itens/100.png">
                     </div>
                     <p>
-                        Akuma no Mi aleatória
+                         Akuma no Mi do tipo Logia
                     </p>
+
+                <?php endif; ?>
+                <?php if (isset($recompensa["zoan"])): ?>
+                    <div class="equipamentos_casse_6 pull-left">
+                        <img src="Imagens/Itens/100.png">
+                    </div>
+                    <p>
+                         Akuma no Mi do tipo Zoan
+                    </p>
+
                 <?php endif; ?>
                 <?php if (isset($recompensa["alcunha"])): ?>
                     <?php $alcunha = $connection->run("SELECT * FROM tb_titulos WHERE cod_titulo = ?", "i", array($recompensa["alcunha"]))->fetch_array(); ?>
@@ -74,7 +84,7 @@
                     <?php if ($recompensa["tipo_item"] == TIPO_ITEM_REAGENT): ?>
                         <div class="clearfix">
                             <div class="equipamentos_casse_1 pull-left">
-                                <img src="Imagens/Itens/<?= $reagents[$recompensa["cod_item"]]["img"] ?>.png">
+                                <img src="Imagens/Itens/<?= $reagents[$recompensa["cod_item"]]["img"] ?>.jpg" >
                             </div>
                             <p>
                                 <?= $reagents[$recompensa["cod_item"]]["nome"] ?>

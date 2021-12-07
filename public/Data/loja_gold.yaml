@@ -1,0 +1,37 @@
+1:
+  tipo_item: 15
+  cod_item: 122
+  quant: 10
+  preco: 100
+2:
+  tipo_item: 15
+  cod_item: 213
+  quant: 10
+  preco: 100
+3:
+  tipo_item: 15
+  cod_item: 214
+  quant: 10
+  preco: 100
+4:
+  tipo_item: 15
+  cod_item: 215
+  quant: 10
+  preco: 100
+5:
+  tipo_item: 15
+  cod_item: 216
+  quant: 10
+  preco: 100
+6:
+  tipo_item: 15
+  cod_item: 217
+  quant: 10
+  preco: 100
+
+7
+  logia: 1
+  preco: 1000
+8
+  zoan: 1
+  preco: 800

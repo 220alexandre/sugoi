@@ -123,6 +123,24 @@ class UserDetails {
 		$this->connection->run("UPDATE tb_vip SET tatic='1', tatic_duracao = ? WHERE id = ?",
 			"ii", array($tempo, $this->tripulacao["id"]));
 	}
+	public function add_luneta($dias){
+		$tempo_base = $userDetails->vip["luneta"] ? $userDetails->vip["luneta_duracao"] : atual_segundo();
+		$tempo = $tempo_base + ($dias * 86400);
+		$this->connection->run("UPDATE tb_vip SET luneta='1', luneta_duracao = ? WHERE id = ?",
+			"ii", array($tempo, $this->tripulacao["id"]));
+	}
+	public function add_formacoes($dias){
+		$tempo_base = $userDetails->vip["formacoes"] ? $userDetails->vip["formacoes_duracao"] : atual_segundo();
+		$tempo = $tempo_base + ($dias * 86400);
+		$this->connection->run("UPDATE tb_vip SET formacoes='1', formacoes_duracao = ? WHERE id = ?",
+			"ii", array($tempo, $this->tripulacao["id"]));
+	}
+	public function add_coup($dias){
+		$tempo_base = $userDetails->vip["coup_de_burst_duracao"] ? $userDetails->vip["coup_de_burst_duracao"] : atual_segundo();
+		$tempo = $tempo_base + ($dias * 86400);
+		$this->connection->run("UPDATE tb_vip SET coup_de_burst_duracao='1', coup_de_burst_duracao = ? WHERE id = ?",
+			"ii", array($tempo, $this->tripulacao["id"]));
+	}
 
 	protected function _update_last_logon() {
 		global $_SERVER;
@@ -1496,9 +1514,16 @@ class UserDetails {
 		if ($bonus = $this->buffs->get_efeito("bonus_haki")) {
 			$quant += round($bonus * $quant);
 		}
+		$quant_max = $quant;
+		if ($bonus = $this->buffs->get_efeito("haki_5")) {
+			$quant_max *= $bonus;
+		}
 
 		$this->connection->run("UPDATE tb_usuarios SET haki_xp = haki_xp + ? WHERE id = ?",
 			"ii", array($quant, $this->tripulacao["id"]));
+
+		$this->connection->run("UPDATE tb_usuarios SET haki_xp = haki_xp + ? WHERE id = ?",
+			"ii", array($quant_max, $this->tripulacao["id"]));
 	}
 
 	public function add_berries($quant) {

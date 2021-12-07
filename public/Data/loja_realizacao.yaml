@@ -1,0 +1,51 @@
+1
+  dobroes: 50
+  preco: 100
+
+2
+  akuma: 1
+  preco: 1500
+3
+  tipo_item: 15
+  cod_item: 218
+  preco: 100
+  
+4
+  tipo_item: 15
+  cod_item: 211
+  preco: 100
+
+5:
+  tipo_item: 15
+  cod_item: 208
+  preco: 100
+
+6:
+  tipo_item: 15
+  cod_item: 122
+  preco: 100
+
+7:
+  tipo_item: 15
+  cod_item: 193
+  preco: 100
+8:
+  tipo_item: 15
+  cod_item: 213
+  preco: 100
+9:
+  tipo_item: 15
+  cod_item: 214
+  preco: 100
+10:
+  tipo_item: 15
+  cod_item: 215
+  preco: 100
+11:
+  tipo_item: 15
+  cod_item: 216
+  preco: 100
+12:
+  tipo_item: 15
+  cod_item: 217
+  preco: 100

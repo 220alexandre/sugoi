@@ -120,3 +120,8 @@
   descricao: Com o Bonus ativo o jogador recebe 3x a mais XP completando missoes ou matando npcs.
   bonus_xp: 2
   nao_acumulativo: 1
+
+30 :
+  icon: bonus_2.jpg
+  descricao:  Os jogadores recebem 30% mais Haki.
+  haki_5: 1.3

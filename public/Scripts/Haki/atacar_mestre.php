@@ -22,7 +22,7 @@ $treinosRealizados = $connection->run("SELECT * FROM tb_haki_treino WHERE tripul
 
 $treinosLimite = $userDetails->tripulacao['treinos_haki_disponiveis'] - $treinosRealizados;
 
-if ($treinosLimite < $quant || $quant > 50) {
+if ($treinosLimite < $quant || $quant > 6) {
     $protector->exit_error('Quantidade de treinos inválida');
 }
 

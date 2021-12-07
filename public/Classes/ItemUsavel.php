@@ -153,15 +153,106 @@ class ItemUsavel {
 			$this->protector->exit_error("Seu inventário está cheio. Você precisa de 7 espaços livres para receber a recompensa");
 		}
 
-		$this->userDetails->add_item(1, TIPO_ITEM_REAGENT, rand(1, 3));
-		$this->userDetails->add_item(3, TIPO_ITEM_REAGENT, rand(1, 3));
-		$this->userDetails->add_item(5, TIPO_ITEM_REAGENT, rand(1, 3));
-		$this->userDetails->add_item(7, TIPO_ITEM_REAGENT, rand(1, 3));
-		$this->userDetails->add_item(9, TIPO_ITEM_REAGENT, rand(1, 3));
-		$this->userDetails->add_item(11, TIPO_ITEM_REAGENT, rand(1, 3));
-		$this->userDetails->add_item(13, TIPO_ITEM_REAGENT, rand(1, 3));
+		$this->userDetails->add_item(1, TIPO_ITEM_REAGENT, rand(5, 8));
+		$this->userDetails->add_item(3, TIPO_ITEM_REAGENT, rand(5, 8));
+		$this->userDetails->add_item(5, TIPO_ITEM_REAGENT, rand(5, 8));
+		$this->userDetails->add_item(7, TIPO_ITEM_REAGENT, rand(5, 8));
+		$this->userDetails->add_item(9, TIPO_ITEM_REAGENT, rand(5, 8));
+		$this->userDetails->add_item(11, TIPO_ITEM_REAGENT, rand(5, 8));
+		$this->userDetails->add_item(13, TIPO_ITEM_REAGENT, rand(5, 8));
 
 		return "Você recebeu várias joias diferentes";
+
+		$response->loot($recompensas, "Você Recebeu " . implode(", ", $recompensas));
+	}
+	public function abre_pacote_couro() {
+		if (!$this->userDetails->can_add_item(7)) {
+			$this->protector->exit_error("Seu inventário está cheio. Você precisa de 7 espaços livres para receber a recompensa");
+		}
+
+		$this->userDetails->add_item(25, TIPO_ITEM_REAGENT, rand(5, 8));
+		$this->userDetails->add_item(26, TIPO_ITEM_REAGENT, rand(5, 8));
+		$this->userDetails->add_item(27, TIPO_ITEM_REAGENT, rand(5, 8));
+		$this->userDetails->add_item(28, TIPO_ITEM_REAGENT, rand(5, 8));
+		$this->userDetails->add_item(29, TIPO_ITEM_REAGENT, rand(5, 8));
+
+		return "Você recebeu vários couros diferentes";
+
+		$response->loot($recompensas, "Você Recebeu " . implode(", ", $recompensas));
+	}
+	public function abre_pacote_escamas() {
+		if (!$this->userDetails->can_add_item(7)) {
+			$this->protector->exit_error("Seu inventário está cheio. Você precisa de 7 espaços livres para receber a recompensa");
+		}
+
+		$this->userDetails->add_item(30, TIPO_ITEM_REAGENT, rand(5, 8));
+		$this->userDetails->add_item(31, TIPO_ITEM_REAGENT, rand(5, 8));
+		$this->userDetails->add_item(32, TIPO_ITEM_REAGENT, rand(5, 8));
+		$this->userDetails->add_item(33, TIPO_ITEM_REAGENT, rand(5, 8));
+		$this->userDetails->add_item(34, TIPO_ITEM_REAGENT, rand(5, 8));
+
+		return "Você recebeu várias escams diferentes";
+
+	
+		$response->loot($recompensas, "Você Recebeu " . implode(", ", $recompensas));
+	}
+	public function abre_pacote_osso() {
+		if (!$this->userDetails->can_add_item(7)) {
+			$this->protector->exit_error("Seu inventário está cheio. Você precisa de 7 espaços livres para receber a recompensa");
+		}
+
+		$this->userDetails->add_item(15, TIPO_ITEM_REAGENT, rand(5, 8));
+		$this->userDetails->add_item(16, TIPO_ITEM_REAGENT, rand(5, 8));
+		$this->userDetails->add_item(17, TIPO_ITEM_REAGENT, rand(5, 8));
+		$this->userDetails->add_item(18, TIPO_ITEM_REAGENT, rand(5, 8));
+		$this->userDetails->add_item(19, TIPO_ITEM_REAGENT, rand(5, 8));
+
+		return "Você recebeu vários ossos diferentes";
+
+		$response->loot($recompensas, "Você Recebeu " . implode(", ", $recompensas));
+	}
+	public function abre_pacote_presa() {
+		if (!$this->userDetails->can_add_item(7)) {
+			$this->protector->exit_error("Seu inventário está cheio. Você precisa de 7 espaços livres para receber a recompensa");
+		}
+
+		$this->userDetails->add_item(20, TIPO_ITEM_REAGENT, rand(5, 8));
+		$this->userDetails->add_item(21, TIPO_ITEM_REAGENT, rand(5, 8));
+		$this->userDetails->add_item(22, TIPO_ITEM_REAGENT, rand(5, 8));
+		$this->userDetails->add_item(23, TIPO_ITEM_REAGENT, rand(5, 8));
+		$this->userDetails->add_item(24, TIPO_ITEM_REAGENT, rand(5, 8));
+
+		return "Você recebeu várias presas diferentes";
+
+		$response->loot($recompensas, "Você Recebeu " . implode(", ", $recompensas));
+	}
+	public function abre_pacote_minerios() {
+		if (!$this->userDetails->can_add_item(7)) {
+			$this->protector->exit_error("Seu inventário está cheio. Você precisa de 7 espaços livres para receber a recompensa");
+		}
+
+		$this->userDetails->add_item(51, TIPO_ITEM_REAGENT, rand(5, 8));
+		$this->userDetails->add_item(56, TIPO_ITEM_REAGENT, rand(5, 8));
+		$this->userDetails->add_item(59, TIPO_ITEM_REAGENT, rand(5, 8));
+		$this->userDetails->add_item(62, TIPO_ITEM_REAGENT, rand(5, 8));
+		$this->userDetails->add_item(67, TIPO_ITEM_REAGENT, rand(5, 8));
+		$this->userDetails->add_item(70, TIPO_ITEM_REAGENT, rand(5, 8));
+
+		return "Você recebeu várias presas diferentes";
+
+		$response->loot($recompensas, "Você Recebeu " . implode(", ", $recompensas));
+	}
+	public function abre_pacote_madeiras() {
+		if (!$this->userDetails->can_add_item(7)) {
+			$this->protector->exit_error("Seu inventário está cheio. Você precisa de 7 espaços livres para receber a recompensa");
+		}
+
+		$this->userDetails->add_item(75, TIPO_ITEM_REAGENT, rand(5, 8));
+		$this->userDetails->add_item(78, TIPO_ITEM_REAGENT, rand(5, 8));
+		$this->userDetails->add_item(81, TIPO_ITEM_REAGENT, rand(5, 8));
+
+
+		return "Você recebeu várias presas diferentes";
 
 		$response->loot($recompensas, "Você Recebeu " . implode(", ", $recompensas));
 	}
@@ -854,6 +945,17 @@ class ItemUsavel {
 			"message" => "Bônus ativo!"
 		);
 	}
+	public function multiplicador_haki($item, $params) {
+		if ($this->userDetails->buffs->get_efeito("haki_5")) {
+			$this->protector->exit_error("Você já tem um efeito similar ativo");
+		}
+
+		$this->userDetails->buffs->add_buff(30, $params[1] * 60 * 60);
+
+		return array(
+			"message" => "Bônus ativo!"
+		);
+	}
 
 	public function aprende_receita_forja_random() {
 		$receita = $this->connection->run(
@@ -1264,6 +1366,12 @@ class ItemUsavel {
 	}
 	public function tatic30(){
 		$this->userDetails->add_tatic(30);
+	}
+	public function vip_all(){
+		$this->userDetails->add_tatic(30);
+		$this->userDetails->add_luneta(30);
+		$this->userDetails->add_formacoes(30);
+		$this->userDetails->add_coup(30);
 	}
 
 	public function entrega_cabeca_abobora() {
