@@ -65,6 +65,15 @@
                     </p>
 
                 <?php endif; ?>
+                <?php if (isset($recompensa["akuma"])): ?>
+                    <div class="equipamentos_casse_6 pull-left">
+                        <img src="Imagens/Itens/100.png">
+                    </div>
+                    <p>
+                         Akuma no Mi Aleatoria
+                    </p>
+
+                <?php endif; ?>
                 <?php if (isset($recompensa["alcunha"])): ?>
                     <?php $alcunha = $connection->run("SELECT * FROM tb_titulos WHERE cod_titulo = ?", "i", array($recompensa["alcunha"]))->fetch_array(); ?>
                     <p>

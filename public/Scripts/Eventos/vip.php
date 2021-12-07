@@ -32,6 +32,11 @@ if (isset($recompensa["zoan"])) {
         $protector->exit_error("Seu inventário está lotado. Libere espaço antes de pegar sua recompensa");
     }
 }
+if (isset($recompensa["akuma"])) {
+    if (!$userDetails->add_item(rand(100, 110), rand(8,10) , 1, true)) {
+        $protector->exit_error("Seu inventário está lotado. Libere espaço antes de pegar sua recompensa");
+    }
+}
 
 if (isset($recompensa["tipo_item"])) {
     $quant = isset($recompensa["quant"]) ? $recompensa["quant"] : 1;
