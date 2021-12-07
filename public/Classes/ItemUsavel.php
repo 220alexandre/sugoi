@@ -252,7 +252,7 @@ class ItemUsavel {
 		$this->userDetails->add_item(81, TIPO_ITEM_REAGENT, rand(5, 8));
 
 
-		return "Você recebeu várias presas diferentes";
+		return "Você recebeu várias madeiras diferentes";
 
 		$response->loot($recompensas, "Você Recebeu " . implode(", ", $recompensas));
 	}
