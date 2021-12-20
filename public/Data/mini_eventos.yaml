@@ -828,6 +828,14 @@
         quant: 500
       - tipo: berries
         quant: 10000000
+    13:
+      - tipo: reagent
+        cod_item: 121
+        quant: 1
+      - tipo: xp
+        quant: 500
+      - tipo: berries
+        quant: 20000
 11:
   nome: Monstruosidade na Grand Line
   duracao: 06:00:00
@@ -926,6 +934,14 @@
         quant: 500
       - tipo: berries
         quant: 10000000
+    13:
+      - tipo: reagent
+        cod_item: 121
+        quant: 1
+      - tipo: xp
+        quant: 500
+      - tipo: berries
+        quant: 20000
  
 12:
   nome: Monstruosidade no Novo Mundo
@@ -1233,6 +1249,14 @@
         quant: 500
       - tipo: berries
         quant: 10000000
+    14:
+      - tipo: reagent
+        cod_item: 121
+        quant: 1
+      - tipo: xp
+        quant: 1000
+      - tipo: berries
+        quant: 200000
    
 15:
   nome: Catástrofe no Novo Mundo
@@ -1340,3 +1364,11 @@
         quant: 500
       - tipo: berries
         quant: 20000
+    14:
+      - tipo: reagent
+        cod_item: 121
+        quant: 1
+      - tipo: xp
+        quant: 1000
+      - tipo: berries
+        quant: 200000
