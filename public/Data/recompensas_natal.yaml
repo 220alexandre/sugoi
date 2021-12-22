@@ -24,8 +24,8 @@
   rdm_id: 96
   minimo: 1
   tipo: reagent
-  cod_item: 155
-  quant: 2
+  cod_item: 157
+  quant: 1
 5:
   objetivo: "Derrote Vixen"
   rdm_id: 98
@@ -45,14 +45,14 @@
   rdm_id: 100
   minimo: 1
   tipo: reagent
-  cod_item: 157
+  cod_item: 188
   quant: 1
 8:
   objetivo: "Derrote Donner"
   rdm_id: 116
   minimo: 1
   tipo: reagent
-  cod_item: 157
+  cod_item: 188
   quant: 1
 9:
   objetivo: "Derrote Blitzen"
