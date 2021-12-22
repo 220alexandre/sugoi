@@ -3,15 +3,15 @@
   rdm_id: 94
   minimo: 1
   tipo: reagent
-  cod_item: 188
-  quant: 1
+  cod_item: 155
+  quant: 2
 2:
   objetivo: "Derrote Dasher"
   rdm_id: 95
   minimo: 1
   tipo: reagent
-  cod_item: 188
-  quant: 1
+  cod_item: 155
+  quant: 2
 3:
   objetivo: "Derrote Dancer"
   rdm_id: 97
