@@ -29,6 +29,8 @@ ini_set('default_charset','UTF-8');
 	<link rel="stylesheet" type="text/css" href="CSS/font-awesome.min.css" />
 	<link rel="stylesheet" type="text/css" href="CSS/estrutura.css?ver=2.0.14" />
 	<script src="./cookies.js"></script>
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6911680303950528"
+     crossorigin="anonymous"></script>
 	<script type="text/javascript">
 		var gameTitle = document.title;
 
