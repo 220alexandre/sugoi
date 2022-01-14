@@ -11,7 +11,7 @@ if (isset($_GET["pagina"]) && validate_number($_GET["pagina"])) {
 </div>
 
     <div class="panel-body">
-    <?php $trip = $connection->run("SELECT * FROM tb_usuarios ORDER BY vitorias desc ")->fetch_all_array(); ?>
+    <?php $trip = $connection->run("SELECT * FROM tb_usuarios ORDER BY reputacao_mensal desc ")->fetch_all_array(); ?>
     <table class="table table-striped table-hover">
         <thead>
         <tr>
@@ -21,6 +21,8 @@ if (isset($_GET["pagina"]) && validate_number($_GET["pagina"])) {
             <th width="2">Berries</th>
             <th width="2">ADM</th>
             <th width="2">Vitorias</th>
+            <th width="2">reputacao_mensal</th>
+            <th width="2">reputacao</th>
 
 
         </tr>
@@ -34,7 +36,8 @@ if (isset($_GET["pagina"]) && validate_number($_GET["pagina"])) {
             <td style="vertical-align: middle;" class="text-center"><?php echo $tripulacao['berries'] ?></td>
             <td style="vertical-align: middle;" class="text-center"><?php echo $tripulacao['adm'] ?></td>
             <td style="vertical-align: middle;" class="text-center"><?php echo $tripulacao['vitorias'] ?></td>
-
+            <td style="vertical-align: middle;" class="text-center"><?php echo $tripulacao['reputacao_mensal'] ?></td>
+            <td style="vertical-align: middle;" class="text-center"><?php echo $tripulacao['reputacao'] ?></td>
             </tr>
         <?php endforeach; ?>
         </tbody>
