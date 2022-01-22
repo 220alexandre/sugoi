@@ -46,6 +46,8 @@ class Combate {
 			$this->aplica_buffs($personagem_combate);
 			$this->connection->run("UPDATE tb_personagens SET maestria = maestria + 1 WHERE cod = ?",
 				"i", array($personagem_combate["cod"]));
+			$this->connection->run("UPDATE tb_personagens SET despertar = despertar + 1 WHERE cod = ?",
+				"i", array($personagem_combate["cod"]));
 		}
 
 		$this->remove_buffs();
@@ -1100,6 +1102,7 @@ class Combate {
 			);
 		}
 	}
+	
 
 	public function aumenta_xp($personagem) {
 		$ip_1 = $this->connection->run("SELECT ip FROM tb_usuarios WHERE id = ?",

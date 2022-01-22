@@ -161,6 +161,7 @@ function get_basic_skills($filter_column, $filter_value, $tipo_base = 0, $maestr
     return $skills_ordered;
 }
 
+
 function aprende_habilidade_random($pers, $cod_skill, $tipo_skill) {
     global $connection;
 
@@ -212,6 +213,48 @@ function aprende_todas_habilidades_disponiveis_akuma($pers) {
             aprende_habilidade_random($pers, $skill["cod_skil"], TIPO_SKILL_PASSIVA_AKUMA);
         }
     }
+}
+function get_basic_despertar($filter_column, $filter_value, $tipo_base = 0, $despertar = 0) {
+    global $connection;
+    $skills = [];
+
+    $result = $connection->run("SELECT * FROM tb_skil_atk WHERE $filter_column = ? AND despertar = ? ORDER BY requisito_lvl, categoria",
+        "ii", array($filter_value, $despertar));
+
+    while ($skill = $result->fetch_array()) {
+        $skill["tipo"] = "Ataque";
+        $skill["tiponum"] = $tipo_base + 1;
+        $skills[] = $skill;
+    }
+
+    $result = $connection->run("SELECT * FROM tb_skil_buff WHERE $filter_column = ? AND despertar = ? ORDER BY requisito_lvl, categoria",
+        "ii", array($filter_value, $despertar));
+
+    while ($skill = $result->fetch_array()) {
+        $skill["tipo"] = "Buff";
+        $skill["tiponum"] = $tipo_base + 2;
+        $skills[] = $skill;
+    }
+
+    $result = $connection->run("SELECT * FROM tb_skil_passiva WHERE $filter_column = ? AND despertar = ? ORDER BY requisito_lvl, categoria",
+        "ii", array($filter_value, $despertar));
+
+    while ($skill = $result->fetch_array()) {
+        $skill["tipo"] = "Passiva";
+        $skill["tiponum"] = $tipo_base + 3;
+        $skills[] = $skill;
+    }
+
+    $skills_ordered = $skills;
+    $categorias = [];
+    $lvl = [];
+    foreach ($skills_ordered as $key => $row) {
+        $categorias[$key] = $row['categoria'];
+        $lvl[$key] = $row["requisito_lvl"];
+    }
+    array_multisort($categorias, SORT_ASC, $lvl, SORT_ASC, $skills_ordered);
+
+    return $skills_ordered;
 }
 ?>
 <?php function render_habilidades_classe_tab($skills, $pers, $form_url, $pode_aprender_func) { ?>
@@ -352,6 +395,11 @@ function aprende_todas_habilidades_disponiveis_akuma($pers) {
         <?php if (isset($skill["requisito_maestria"]) && $skill["requisito_maestria"]): ?>
             <div class="<?= $pers["maestria"] >= $skill["requisito_maestria"] ? "text-success text-line-through" : "" ?>">
                 Maestria: <strong><?= $skill["requisito_maestria"]; ?></strong>
+            </div>
+        <?php endif; ?>
+        <?php if (isset($skill["requisito_despertar"]) && $skill["requisito_despertar"]): ?>
+            <div class="<?= $pers["despertar"] >= $skill["requisito_despertar"] ? "text-success text-line-through" : "" ?>">
+                Despertar: <strong><?= $skill["requisito_despertar"]; ?></strong>
             </div>
         <?php endif; ?>
     </div>

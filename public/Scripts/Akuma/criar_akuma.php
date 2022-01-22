@@ -141,7 +141,7 @@ for ($x = 0; $x < 51; $x += 5) {
     }
 }
 
-$connection->run("UPDATE tb_personagens SET akuma='$cod_akuma', maestria = 0 WHERE cod='$cod_pers'");
+$connection->run("UPDATE tb_personagens SET akuma='$cod_akuma', maestria = 0, tipo_akm ='$tipoakuma' WHERE cod='$cod_pers'");
 
 $connection->run(
     "DELETE ps FROM tb_personagens_skil ps 

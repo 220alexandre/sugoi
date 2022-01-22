@@ -81,6 +81,7 @@ function nome_tipo_akuma($tipo) {
     }
 }
 
+
 function get_desc_akuma_random($tipo) {
     $akumas = DataLoader::load("akuma_description");
     $akumas = $akumas[$tipo];
@@ -98,11 +99,11 @@ function render_status_akuma($pers, $img_akuma, $tipoakuma) {
             <img src="Imagens/Itens/<?= $img_akuma ?>.png">
             <?= nome_tipo_akuma($tipoakuma) ?>
             <ul>
-                <li><span id="quantidade_ataques"><?= ($tipoakuma == 10) ? "2" : "3" ?></span> Ataques</li>
-                <li><span id="quantidade_buffs"><?= ($tipoakuma == 10) ? "5" : ($tipoakuma == 9 ? "4" : "3") ?></span>
+                <li><span id="quantidade_ataques"><?= ($tipoakuma == 10) ? "2" : ($tipoakuma == 9 ? "2" : "2") ?></span> Ataques</li>
+                <li><span id="quantidade_buffs"><?= ($tipoakuma == 10) ? "6" : ($tipoakuma == 9 ? "4" : "4") ?></span>
                     Buffs
                 </li>
-                <li><span id="quantidade_passivas"><?= ($tipoakuma == 8) ? "5" : "4" ?></span> Passivas</li>
+                <li><span id="quantidade_passivas"><?= ($tipoakuma == 8) ? "5" : ($tipoakuma == 9 ? "5" : "3" )?></span> Passivas</li>
             </ul>
         </div>
     </div>

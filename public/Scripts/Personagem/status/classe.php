@@ -28,6 +28,24 @@ for ($classe = 1; $classe <= 3; $classe++) {
 
     $skills_classe[$classe] = array(1 => $skills_1, 2 => $skills_2, 3 => $skills_3);
 }
+$skills_akuma = array(
+    "7" => get_basic_despertar("requisito_akuma", 7),
+    "8" => get_basic_despertar("requisito_akuma", 8),
+    "9" => get_basic_despertar("requisito_akuma", 9)
+);
+for ($akuma = 7; $akuma <= 9; $akuma++) {
+    $skills_ordered = $skills_akuma[$classe];
+    $skills_1 = [];
+    $skills_2 = [];
+    $skills_3 = [];
+    foreach ($skills_ordered as $skill) {
+        $var_name = "skills_" . $skill["categoria"];
+        $var = &$$var_name;
+        $var[] = $skill;
+    }
+
+    $skills_akuma[$classe] = array(1 => $skills_1, 2 => $skills_2, 3 => $skills_3);
+}
 ?>
 <?php render_personagem_panel_top($pers, 0) ?>
 <?php if (!$pers["classe"]): ?>

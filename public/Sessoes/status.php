@@ -208,6 +208,7 @@
                 <?php render_nav("akuma", "Akuma no Mi", "glyphicon glyphicon-apple", $nav, $pers) ?>
                 <?php render_nav("classe", "Classe", "fa fa-star-o", $nav, $pers) ?>
                 <?php render_nav("maestria", "Maestria", "fa fa-superpowers", $nav, $pers) ?>
+                <?php render_nav("despertar", "despertar", "fa fa-superpowers", $nav, $pers) ?>
                 <?php render_nav("profissao", "Profissão", "fa fa-gavel", $nav, $pers) ?>
                 <?php render_nav("habilidades", "Habilidades", "fa fa-star", $nav, $pers) ?>
                 <?php render_nav("equipamentos", "Equipamentos", "fa fa-shield", $nav, $pers) ?>
@@ -232,6 +233,10 @@
 
                 <div id="nav-maestria-<?= $pers["cod"] ?>"
                      class="tab-pane <?= $nav == "maestria" ? "active" : "" ?>">
+                    <img src="Imagens/carregando.gif"/>
+                </div>
+                <div id="nav-despertar-<?= $pers["cod"] ?>"
+                     class="tab-pane <?= $nav == "depertar" ? "active" : "" ?>">
                     <img src="Imagens/carregando.gif"/>
                 </div>
 
