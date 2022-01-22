@@ -2,40 +2,33 @@
   tipo_item: 15
   cod_item: 122
   quant: 10
-  preco: 100
+  preco: 0
 2:
   tipo_item: 15
   cod_item: 213
   quant: 10
-  preco: 100
+  preco: 0
 3:
   tipo_item: 15
   cod_item: 214
   quant: 10
-  preco: 100
+  preco: 0
 4:
   tipo_item: 15
   cod_item: 215
   quant: 10
-  preco: 100
+  preco: 0
 5:
   tipo_item: 15
   cod_item: 216
   quant: 10
-  preco: 100
+  preco: 0
 6:
   tipo_item: 15
   cod_item: 217
   quant: 10
-  preco: 100
+  preco: 0
 
 7
-  logia: 1
-  preco: 1000
-8
-  zoan: 1
-  preco: 800
-
-9
   akuma: 1
   preco: 0

@@ -11,13 +11,8 @@ if (!isset($recompensas[$recompensa_id])) {
     $protector->exit_error("Recompensa inválida");
 }
 
-$recompensa = $recompensas[$recompensa_id];
+$recompensa = $recompensas[$recompensa_id]; 
 
-$recompensado = $connection->run("SELECT count(*) AS total FROM tb_vip_mensal WHERE tripulacao_id = ? AND recompensa_id = ?",
-    "ii", array($userDetails->tripulacao["id"], $recompensa_id))->fetch_array()["total"];
-    if ($recompensado) {
-        $protector->exit_error("Você já recebeu essa recompensa");
-    }
 if ($userDetails->conta["gold"] < $recompensa["preco"]) {
     $protector->exit_error("Você não ouro suficiente");
 }
